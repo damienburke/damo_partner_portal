@@ -1,0 +1,23 @@
+server:
+  ssl:
+    enabled: false
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: bin
+          uri: http://httpbin.org:80/anything
+          predicates:
+            - Path=/get
+          filters:
+            - name: RequestRateLimiter
+              args:
+                redis-rate-limiter.replenishRate: 10 # per second
+                redis-rate-limiter.burstCapacity: 20 # maximum capacity
+                redis-rate-limiter.requestedTokens: 1 # num tokens required per request
+                key-resolver: "#{@productKeyResolver}"
+
+  redis:
+    host: localhost
+    port: 6379

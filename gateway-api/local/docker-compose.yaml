@@ -1,0 +1,25 @@
+version: '3.8'
+services:
+  redis:
+    image: bitnami/redis:latest
+    restart: always
+    ports:
+      - '6379:6379'
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+    volumes:
+      - redis:/data
+    networks:
+      - damo_network
+volumes:
+  redis:
+    driver: local
+
+networks:
+  damo_network:
+    external: true
