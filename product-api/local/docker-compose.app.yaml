@@ -2,9 +2,7 @@ services:
 
   product-api:
     container_name: product-api
-    build:
-      context: ..
-      dockerfile: Dockerfile
+    image: product-api:0.0.1-SNAPSHOT
     environment:
       - FLYWAY_DB_PASSWORD=product_api_pwd
       - SA_DB_PASSWORD=service_account_password

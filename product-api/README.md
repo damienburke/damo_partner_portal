@@ -1,17 +1,22 @@
 # Build & run product-api
 
-## 1. Build product-api jar file
+## 1. Build product-api jar file and a docker image
 
 ```bash
-./gradlew build
+./gradlew jibDockerBuild
 ```
 
-## 2. Build product-api image, run product-api container & backing services (i.e. a pg container)
+## 2. Run product-api container & backing services (i.e. a pg container)
 
 ```bash
 cd local
 docker-compose -f docker-compose.base.yaml -f docker-compose.app.yaml down --volumes
 docker-compose -f docker-compose.base.yaml -f docker-compose.app.yaml up -d --build
+```
+
+# Security scan
+```bash
+./gradlew snyk-test
 ```
 
 - db encryption
@@ -26,8 +31,6 @@ drop db
 flyway dbuser
 
 security scans
--> https://nvd.nist.gov/developers/request-an-api-key
--> 5a9e4696-44ea-48bd-96cb-1d94675b5bd8
-export NVD_API_KEY=5a9e4696-44ea-48bd-96cb-1d94675b5bd8
-
-report upgrades
+```bash
+export SNYK_TOKEN=e6d7383b-5086-4a16-9efb-4296259b22d5
+```

@@ -5,7 +5,8 @@ plugins {
     kotlin("plugin.allopen") version "1.9.22"
     id("org.springframework.boot") version "3.3.5"
     id("io.spring.dependency-management") version "1.1.6"
-    id("org.owasp.dependencycheck") version "11.1.0"
+    id("io.snyk.gradle.plugin.snykplugin") version "0.7.0"
+    id("com.google.cloud.tools.jib") version "3.4.4"
 }
 
 group = "com.ssd"
@@ -23,6 +24,7 @@ repositories {
 
 ext {
     set("testcontainers.version", "1.19.8")
+    set("flywayPostgresqlVersion", "10.21.0")
 }
 
 dependencies {
@@ -33,10 +35,8 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-jdbc")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
-
-    runtimeOnly("org.flywaydb:flyway-database-postgresql:10.21.0")
+    runtimeOnly("org.flywaydb:flyway-database-postgresql:${property("flywayPostgresqlVersion")}")
     runtimeOnly("org.postgresql:postgresql")
-    implementation("org.owasp:dependency-check-gradle:10.0.3")
     testImplementation("org.springframework.boot:spring-boot-testcontainers")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("org.testcontainers:junit-jupiter")
@@ -52,36 +52,31 @@ kotlin {
     }
 }
 
-allOpen {
-    annotation("jakarta.persistence.Entity")
-    annotation("jakarta.persistence.Embeddable")
-    annotation("jakarta.persistence.MappedSuperclass")
+snyk {
+    setArguments("--all-sub-projects")
+    setSeverity("high")
+    setAutoDownload(true)
+    setAutoUpdate(true)
+}
+
+tasks.test {
+    finalizedBy(tasks.`snyk-test`)
 }
 
 tasks.withType<Test> {
     useJUnitPlatform()
 }
 
-dependencyCheck {
-    skipConfigurations = mutableListOf(
-        "errorprone",
-        "checkstyle",
-        "annotationProcessor",
-        "java9AnnotationProcessor",
-        "moduleAnnotationProcessor",
-        "testAnnotationProcessor",
-        "testJpmsAnnotationProcessor",
-        "animalsniffer",
-        "spotless996155815", // spotless996155815 is a weird configuration that's only added in jaeger-proto, jaeger-remote-sampler
-        "js2p",
-        "jmhAnnotationProcessor",
-        "jmhBasedTestAnnotationProcessor",
-        "jmhCompileClasspath",
-        "jmhRuntimeClasspath",
-        "jmhRuntimeOnly"
-    )
-    nvd.apiKey = System.getenv("NVD_API_KEY")
-    failOnError = true
-    failBuildOnCVSS = 7.0f // fail on high or critical CVE
-
+jib {
+    from {
+        image = "openjdk:21-jdk"
+    }
+    to {
+        image = "product-api:0.0.1-SNAPSHOT"
+    }
+    container {
+        mainClass = "com.ssd.ProductApiApplicationKt"
+        jvmFlags = listOf("-Xmx2048M")
+        ports = listOf("8080", "8081")
+    }
 }

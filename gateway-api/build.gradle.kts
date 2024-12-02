@@ -3,6 +3,7 @@ plugins {
 	kotlin("plugin.spring") version "1.9.25"
 	id("org.springframework.boot") version "3.4.0"
 	id("io.spring.dependency-management") version "1.1.6"
+	id("com.google.cloud.tools.jib") version "3.4.4"
 }
 
 group = "com.ssd"
@@ -51,4 +52,18 @@ kotlin {
 
 tasks.withType<Test> {
 	useJUnitPlatform()
+}
+
+jib {
+	from {
+		image = "openjdk:21-jdk"
+	}
+	to {
+		image = "gateway-api:0.0.1-SNAPSHOT"
+	}
+	container {
+		mainClass = "com.ssd.gateway.ApplicationKt"
+		jvmFlags = listOf("-Xmx2048M")
+		ports = listOf("8080", "8081")
+	}
 }

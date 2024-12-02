@@ -4,13 +4,13 @@
 
 ## 1.1 Software
 
-* docker - to build image
-* docker-compose - to run containers
-* java21 - to build applications
+* `java21` - to build applications
+* `docker` - to build image
+* `docker-compose` - to run containers
 
 ## 1.2 System
 
-1. create damo_network - to allow the containers communicate on the same network
+1. create `damo_network` - to allow the containers communicate on the same network
 
 ```bash
 if ! docker network inspect damo_network > /dev/null 2>&1; then
