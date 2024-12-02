@@ -1,0 +1,19 @@
+services:
+
+  product-api:
+    container_name: product-api
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    environment:
+      - FLYWAY_DB_PASSWORD=product_api_pwd
+      - SA_DB_PASSWORD=service_account_password
+    ports:
+      - "6868:8080"
+      - "6869:8081"
+    networks:
+      - damo_network
+
+networks:
+  damo_network:
+    external: true

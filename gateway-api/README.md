@@ -1,20 +1,15 @@
+# 1. Build & run gateway-api
 
-
-## System Setup
-
-1. create damo_network
-```bash
-docker create network damo_network
-```
-
-2. Hosts override:
+## 1.1. Build gateway-api jar file
 
 ```bash
-sudo bash -c 'echo "127.0.0.1 damoportal" >> /etc/hosts'
+./gradlew build
 ```
 
-3. Clear host cache
+## 1.2. Build gateway-api image, run gateway-api container & backing services (i.e. a redis container)
+
 ```bash
-chrome://net-internals/#dns
+cd local
+docker-compose -f docker-compose.base.yaml -f docker-compose.app.yaml down --volumes
+docker-compose -f docker-compose.base.yaml -f docker-compose.app.yaml up -d --build
 ```
-, or restart browser..

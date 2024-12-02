@@ -6,7 +6,7 @@ services:
       - POSTGRES_PASSWORD=product_api_pwd
       - POSTGRES_DB=product_db
     volumes:
-      - ./init-scripts:/docker-entrypoint-initdb.d
+      - ./pg-init-scripts:/docker-entrypoint-initdb.d
     ports:
       - "5878:5432"
     healthcheck:
@@ -20,7 +20,3 @@ services:
 networks:
   damo_network:
     external: true
-
-#networks:
-#  product-api-network:
-#    driver: bridge

@@ -35,10 +35,10 @@ abstract class BaseIT {
             println("Project root directory: $userDir")
             val localFolder: Path = Paths.get(userDir, "local")
             val dockerComposeFile: Path =
-                localFolder.resolve("docker-compose.yml")
+                localFolder.resolve("docker-compose.base.yaml")
 
             if (Files.notExists(dockerComposeFile)) {
-                throw IllegalStateException("docker-compose.yml not found at: ${dockerComposeFile.toAbsolutePath()}")
+                throw IllegalStateException("docker-compose.yaml not found at: ${dockerComposeFile.toAbsolutePath()}")
             }
 
             return KDockerComposeContainer(dockerComposeFile.toFile())

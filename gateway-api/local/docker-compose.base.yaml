@@ -16,6 +16,7 @@ services:
       - redis:/data
     networks:
       - damo_network
+
 volumes:
   redis:
     driver: local

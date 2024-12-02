@@ -1,11 +1,22 @@
+# Build & run product-api
 
-DB
-- ssl
-- >
- 
+## 1. Build product-api jar file
+
+```bash
+./gradlew build
+```
+
+## 2. Build product-api image, run product-api container & backing services (i.e. a pg container)
+
+```bash
+cd local
+docker-compose -f docker-compose.base.yaml -f docker-compose.app.yaml down --volumes
+docker-compose -f docker-compose.base.yaml -f docker-compose.app.yaml up -d --build
+```
+
 - db encryption
 - > https://dev.to/cristiancfm/encrypting-postgresql-database-columns-in-spring-boot-jpa-entities-4915
-  
+
 - app db encryption
 - apply the Principle of Least Privilege while benefiting from the convenience of Flyway managing your schemas.
 
