@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service
 class ProductServiceImpl(val productRepository: ProductRepository) : ProductService {
     override fun getProducts(): List<ProductEntity> = productRepository.findAll()
     override fun addProduct(entity: ProductEntity) {
+
         productRepository.save<ProductEntity>(entity)
     }
 

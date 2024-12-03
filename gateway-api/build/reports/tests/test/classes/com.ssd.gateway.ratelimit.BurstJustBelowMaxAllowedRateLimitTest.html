@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - BurstJustBelowMaxAllowedRateLimitTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>BurstJustBelowMaxAllowedRateLimitTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.ssd.gateway.ratelimit.html">com.ssd.gateway.ratelimit</a> &gt; BurstJustBelowMaxAllowedRateLimitTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.767s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">hammer API()</td>
+<td class="success">0.767s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2024-12-03 09:49:28 [Test worker] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.ssd.gateway.ratelimit.BurstJustBelowMaxAllowedRateLimitTest]: BurstJustBelowMaxAllowedRateLimitTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-03 09:49:28 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.ssd.gateway.Application for test class com.ssd.gateway.ratelimit.BurstJustBelowMaxAllowedRateLimitTest
+Project root directory: /Users/grainneomalley/damo/workspace/college/damo_partner_portal/gateway-api
+starting redis..
+2024-12-03 09:49:28 [Test worker] INFO  o.t.containers.ComposeDelegate - Preemptively checking local images for 'bitnami/redis:latest', referenced via a compose file or transitive Dockerfile. If not available, it will be pulled.
+2024-12-03 09:49:28 [Test worker] INFO  tc.docker/compose:1.29.2 - Copying all files in /Users/grainneomalley/damo/workspace/college/damo_partner_portal/gateway-api/local into the container
+2024-12-03 09:49:28 [Test worker] INFO  tc.docker/compose:1.29.2 - Creating container for image: docker/compose:1.29.2
+2024-12-03 09:49:28 [Test worker] INFO  tc.docker/compose:1.29.2 - Container docker/compose:1.29.2 is starting: 9b12fa80f64b3925cc02ae2856839deb37a9cf6c7c47994cc2bf60f241874a5b
+2024-12-03 09:49:30 [Test worker] INFO  tc.docker/compose:1.29.2 - Container docker/compose:1.29.2 started in PT2.648499S
+2024-12-03 09:49:30 [Test worker] INFO  tc.docker/compose:1.29.2 - Docker Compose container is running for command: up -d
+2024-12-03 09:49:30 [docker-java-stream-1050261978] INFO  tc.docker/compose:1.29.2 - STDERR: Creating volume &quot;drfhrmmz9acv_redis&quot; with local driver
+2024-12-03 09:49:30 [docker-java-stream-1050261978] INFO  tc.docker/compose:1.29.2 - STDERR: Creating drfhrmmz9acv_redis_1 ... 
+2024-12-03 09:49:30 [docker-java-stream-1050261978] INFO  tc.docker/compose:1.29.2 - STDERR: Creating drfhrmmz9acv_redis_1 ... done
+2024-12-03 09:49:30 [Test worker] INFO  tc.docker/compose:1.29.2 - Docker Compose has finished running
+2024-12-03 09:49:30 [Test worker] INFO  tc.alpine/socat:1.7.4.3-r0 - Creating container for image: alpine/socat:1.7.4.3-r0
+2024-12-03 09:49:31 [Test worker] INFO  tc.alpine/socat:1.7.4.3-r0 - Container alpine/socat:1.7.4.3-r0 is starting: dc22507e57fa7ad156486547c0b8b57482773e9b37ae63a2d864115dc40fb3d5
+2024-12-03 09:49:31 [Test worker] INFO  tc.alpine/socat:1.7.4.3-r0 - Container alpine/socat:1.7.4.3-r0 started in PT0.550526S
+redis started
+2024-12-03 09:49:32 [lettuce-nioEventLoop-7-5] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to localhost/&lt;unresolved&gt;:6379
+ApiResponse(index=4, responseCode=200, remainingRateLimitTokens=16, requestTime=2024-12-03T09:49:34.640949)
+ApiResponse(index=14, responseCode=200, remainingRateLimitTokens=17, requestTime=2024-12-03T09:49:34.642307)
+ApiResponse(index=0, responseCode=200, remainingRateLimitTokens=18, requestTime=2024-12-03T09:49:34.640671)
+ApiResponse(index=16, responseCode=200, remainingRateLimitTokens=14, requestTime=2024-12-03T09:49:34.643143)
+ApiResponse(index=1, responseCode=200, remainingRateLimitTokens=15, requestTime=2024-12-03T09:49:34.640671)
+ApiResponse(index=10, responseCode=200, remainingRateLimitTokens=19, requestTime=2024-12-03T09:49:34.641816)
+ApiResponse(index=13, responseCode=200, remainingRateLimitTokens=13, requestTime=2024-12-03T09:49:34.642200)
+ApiResponse(index=8, responseCode=200, remainingRateLimitTokens=12, requestTime=2024-12-03T09:49:34.641373)
+ApiResponse(index=6, responseCode=200, remainingRateLimitTokens=11, requestTime=2024-12-03T09:49:34.641154)
+ApiResponse(index=7, responseCode=200, remainingRateLimitTokens=9, requestTime=2024-12-03T09:49:34.641275)
+ApiResponse(index=9, responseCode=200, remainingRateLimitTokens=10, requestTime=2024-12-03T09:49:34.641540)
+ApiResponse(index=12, responseCode=200, remainingRateLimitTokens=7, requestTime=2024-12-03T09:49:34.641991)
+ApiResponse(index=3, responseCode=200, remainingRateLimitTokens=8, requestTime=2024-12-03T09:49:34.640874)
+ApiResponse(index=18, responseCode=200, remainingRateLimitTokens=5, requestTime=2024-12-03T09:49:34.645873)
+ApiResponse(index=2, responseCode=200, remainingRateLimitTokens=4, requestTime=2024-12-03T09:49:34.640748)
+ApiResponse(index=5, responseCode=200, remainingRateLimitTokens=3, requestTime=2024-12-03T09:49:34.641056)
+ApiResponse(index=15, responseCode=200, remainingRateLimitTokens=2, requestTime=2024-12-03T09:49:34.642311)
+ApiResponse(index=11, responseCode=200, remainingRateLimitTokens=1, requestTime=2024-12-03T09:49:34.641946)
+ApiResponse(index=17, responseCode=200, remainingRateLimitTokens=6, requestTime=2024-12-03T09:49:34.646602)
+200 Count: 19
+Time difference: 0 seconds
+2024-12-03 09:49:35 [Test worker] INFO  tc.docker/compose:1.29.2 - Copying all files in /Users/grainneomalley/damo/workspace/college/damo_partner_portal/gateway-api/local into the container
+2024-12-03 09:49:35 [Test worker] INFO  tc.docker/compose:1.29.2 - Creating container for image: docker/compose:1.29.2
+2024-12-03 09:49:35 [Test worker] INFO  tc.docker/compose:1.29.2 - Container docker/compose:1.29.2 is starting: eb24d32bd5aec899ca6a4ffc808f98c26e0a379ba3a7394dbb8073780d10ae26
+2024-12-03 09:49:37 [lettuce-eventExecutorLoop-3-6] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was localhost/[0:0:0:0:0:0:0:1]:6379
+2024-12-03 09:49:37 [lettuce-nioEventLoop-7-6] WARN  i.l.core.protocol.ConnectionWatchdog - Cannot reconnect to [localhost/&lt;unresolved&gt;:6379]: Connection closed prematurely
+io.lettuce.core.RedisConnectionException: Connection closed prematurely
+	at io.lettuce.core.protocol.RedisHandshakeHandler.channelInactive(RedisHandshakeHandler.java:76)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:303)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:281)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:274)
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelInactive(ChannelInboundHandlerAdapter.java:81)
+	at io.lettuce.core.ChannelGroupListener.channelInactive(ChannelGroupListener.java:54)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:303)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:281)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:274)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelInactive(DefaultChannelPipeline.java:1352)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:301)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:281)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelInactive(DefaultChannelPipeline.java:850)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$7.run(AbstractChannel.java:811)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:566)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-12-03 09:49:38 [Test worker] INFO  tc.docker/compose:1.29.2 - Container docker/compose:1.29.2 started in PT2.386007S
+2024-12-03 09:49:38 [Test worker] INFO  tc.docker/compose:1.29.2 - Docker Compose container is running for command: down -v
+2024-12-03 09:49:38 [docker-java-stream--1597060072] INFO  tc.docker/compose:1.29.2 - STDERR: Stopping drfhrmmz9acv_redis_1 ... 
+2024-12-03 09:49:38 [docker-java-stream--1597060072] INFO  tc.docker/compose:1.29.2 - STDERR: Stopping drfhrmmz9acv_redis_1 ... done
+2024-12-03 09:49:38 [docker-java-stream--1597060072] INFO  tc.docker/compose:1.29.2 - STDERR: Removing drfhrmmz9acv_redis_1 ... 
+2024-12-03 09:49:38 [docker-java-stream--1597060072] INFO  tc.docker/compose:1.29.2 - STDERR: Removing drfhrmmz9acv_redis_1 ... done
+2024-12-03 09:49:38 [docker-java-stream--1597060072] INFO  tc.docker/compose:1.29.2 - STDERR: Network damo_network is external, skipping
+2024-12-03 09:49:38 [docker-java-stream--1597060072] INFO  tc.docker/compose:1.29.2 - STDERR: Removing volume drfhrmmz9acv_redis
+2024-12-03 09:49:38 [Test worker] INFO  tc.docker/compose:1.29.2 - Docker Compose has finished running
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.11.1</a> at 3 Dec 2024, 09:50:14</p>
+</div>
+</div>
+</body>
+</html>

@@ -15,22 +15,23 @@ docker-compose -f docker-compose.base.yaml -f docker-compose.app.yaml up -d --bu
 ```
 
 # Security scan
+
+## Prerequisites
+Obtain a token from [here](https://docs.snyk.io/snyk-api/rest-api/authentication-for-api/revoke-and-regenerate-a-snyk-api-token)
+
+## Set env var
+```bash
+export SNYK_TOKEN=XXXXXXXXXXXXXX
+```
+
+## Run scan
+```bash
+./gradlew build
+```
+
+or 
+
 ```bash
 ./gradlew snyk-test
 ```
 
-- db encryption
-- > https://dev.to/cristiancfm/encrypting-postgresql-database-columns-in-spring-boot-jpa-entities-4915
-
-- app db encryption
-- apply the Principle of Least Privilege while benefiting from the convenience of Flyway managing your schemas.
-
-Test
-Wrong password?
-drop db
-flyway dbuser
-
-security scans
-```bash
-export SNYK_TOKEN=e6d7383b-5086-4a16-9efb-4296259b22d5
-```

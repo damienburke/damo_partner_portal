@@ -16,7 +16,7 @@ class DBSecurityTests : BaseIT() {
      * Delete not allowed
      */
     @Test
-    fun `attempt to delete product data`() {
+    fun `principle of least privilege`() {
 
         productRepository.findAll()
         val createdRecord = productRepository.save(
@@ -29,6 +29,8 @@ class DBSecurityTests : BaseIT() {
         )
 
         productRepository.save(createdRecord.copy(releaseYear = 1977))
+
+        val x = productRepository.save(createdRecord.copy(artist = "<td><script>alert('XSS Attack!');</script></td>"))
 
         assertFailsWith<InvalidDataAccessResourceUsageException>(
             block = {

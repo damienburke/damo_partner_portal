@@ -9,6 +9,11 @@ import jakarta.persistence.GeneratedValue
 import jakarta.persistence.GenerationType
 import jakarta.persistence.Id
 import jakarta.persistence.Table
+import jakarta.validation.constraints.Min
+import jakarta.validation.constraints.NotBlank
+import jakarta.validation.constraints.NotNull
+import jakarta.validation.constraints.Positive
+import jakarta.validation.constraints.Size
 import org.hibernate.annotations.ColumnTransformer
 import java.math.BigDecimal
 
@@ -18,9 +23,20 @@ data class ProductEntity(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Int = 0,
+
+    @get:Size(max = 50, message = "Artist must be between 5 and 50 characters")
+    @NotBlank
     val artist: String = "",
+
+    @get:Size(max = 100, message = "Album title must be between 5 and 100 characters")
+    @NotBlank
     val albumTitle: String = "",
+
+    @Min(1900)
+    @Positive
     val releaseYear: Int = 0,
+
+    @Positive
     val price: BigDecimal = BigDecimal.ZERO,
 
     @ColumnTransformer(
@@ -28,6 +44,7 @@ data class ProductEntity(
         write = "pgp_sym_encrypt(" + "?::text," + "current_setting('encryption.key')" + ")"
     )
     @Column(columnDefinition = "bytea")
+    @Size(max = 3, message = "Promo Code title not be longer than 3 characters")
     val promoCode: String = ""
 ) {
 

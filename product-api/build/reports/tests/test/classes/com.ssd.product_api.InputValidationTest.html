@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - InputValidationTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>InputValidationTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.ssd.product_api.html">com.ssd.product_api</a> &gt; InputValidationTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">2.016s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">attempt to save invalid product input()</td>
+<td class="success">2.016s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2024-12-03 20:48:50 [Test worker] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.ssd.product_api.InputValidationTest]: InputValidationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-03 20:48:50 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.ssd.ProductApiApplication for test class com.ssd.product_api.InputValidationTest
+Project root directory: /Users/grainneomalley/damo/workspace/college/damo_partner_portal/product-api
+2024-12-03 20:48:50 [Test worker] INFO  o.testcontainers.images.PullPolicy - Image pull policy will be performed by: DefaultPullPolicy()
+2024-12-03 20:48:50 [Test worker] INFO  o.t.utility.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+starting pg..
+2024-12-03 20:48:50 [Test worker] INFO  o.t.d.DockerClientProviderStrategy - Loaded org.testcontainers.dockerclient.UnixSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2024-12-03 20:48:51 [Test worker] INFO  o.t.d.DockerClientProviderStrategy - Found Docker environment with local Unix socket (unix:///var/run/docker.sock)
+2024-12-03 20:48:51 [Test worker] INFO  o.testcontainers.DockerClientFactory - Docker host IP address is localhost
+2024-12-03 20:48:51 [Test worker] INFO  o.testcontainers.DockerClientFactory - Connected to docker: 
+  Server Version: 27.2.0
+  API Version: 1.47
+  Operating System: Docker Desktop
+  Total Memory: 7839 MB
+2024-12-03 20:48:51 [Test worker] INFO  o.t.utility.RyukResourceReaper - Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2024-12-03 20:48:51 [Test worker] INFO  o.testcontainers.DockerClientFactory - Checking the system...
+2024-12-03 20:48:51 [Test worker] INFO  o.testcontainers.DockerClientFactory - ✔︎ Docker server version should be at least 1.6.0
+2024-12-03 20:48:51 [Test worker] INFO  tc.testcontainers/ryuk:0.7.0 - Creating container for image: testcontainers/ryuk:0.7.0
+2024-12-03 20:48:51 [Test worker] INFO  tc.testcontainers/ryuk:0.7.0 - Container testcontainers/ryuk:0.7.0 is starting: ce5f7545d584bf18513f443d59e518b988f17d977b1cc856dc072aca9dbda9ce
+2024-12-03 20:48:52 [Test worker] INFO  tc.testcontainers/ryuk:0.7.0 - Container testcontainers/ryuk:0.7.0 started in PT1.227555S
+2024-12-03 20:48:52 [Test worker] INFO  tc.docker/compose:1.29.2 - Creating container for image: docker/compose:1.29.2
+2024-12-03 20:48:53 [Test worker] INFO  tc.docker/compose:1.29.2 - Container docker/compose:1.29.2 is starting: 6d35a6e4cce2e744742e341c581e6f281fd051d17ee899eb9ea328ac054f4c31
+2024-12-03 20:48:56 [Test worker] INFO  tc.docker/compose:1.29.2 - Container docker/compose:1.29.2 started in PT3.607938S
+2024-12-03 20:48:56 [Test worker] INFO  tc.docker/compose:1.29.2 - Docker Compose container is running for command: up -d
+2024-12-03 20:48:56 [docker-java-stream--37037230] INFO  tc.docker/compose:1.29.2 - STDERR: Creating yo7s2w5eekur_postgres_1 ... 
+2024-12-03 20:48:56 [docker-java-stream--37037230] INFO  tc.docker/compose:1.29.2 - STDERR: Creating yo7s2w5eekur_postgres_1 ... done
+2024-12-03 20:48:56 [Test worker] INFO  tc.docker/compose:1.29.2 - Docker Compose has finished running
+2024-12-03 20:48:56 [Test worker] INFO  tc.alpine/socat:1.7.4.3-r0 - Creating container for image: alpine/socat:1.7.4.3-r0
+2024-12-03 20:48:56 [Test worker] INFO  tc.alpine/socat:1.7.4.3-r0 - Container alpine/socat:1.7.4.3-r0 is starting: c227fce91d4e97871e411f004a45195c520ef534d3843f3ab739caf28fbcbe3e
+2024-12-03 20:48:57 [Test worker] INFO  tc.alpine/socat:1.7.4.3-r0 - Container alpine/socat:1.7.4.3-r0 started in PT0.922442S
+pg started
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.5)
+
+2024-12-03 20:48:58 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+Registering the jdbcUrl: jdbc:postgresql://localhost:58275/product_db
+2024-12-03 20:48:58 [Test worker] INFO  c.s.product_api.InputValidationTest - Starting InputValidationTest using Java 21.0.4 with PID 53814 (started by grainneomalley in /Users/grainneomalley/damo/workspace/college/damo_partner_portal/product-api)
+2024-12-03 20:48:58 [Test worker] INFO  c.s.product_api.InputValidationTest - No active profile set, falling back to 1 default profile: &quot;default&quot;
+2024-12-03 20:49:00 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-03 20:49:00 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 70 ms. Found 1 JPA repository interface.
+2024-12-03 20:49:01 [Test worker] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 0 (http)
+2024-12-03 20:49:01 [Test worker] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler [&quot;http-nio-auto-1&quot;]
+2024-12-03 20:49:01 [Test worker] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-03 20:49:01 [Test worker] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-03 20:49:01 [Test worker] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-03 20:49:01 [Test worker] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2844 ms
+2024-12-03 20:49:02 [Test worker] DEBUG o.s.j.d.SimpleDriverDataSource - Creating new JDBC Driver Connection to [jdbc:postgresql://localhost:58275/product_db]
+2024-12-03 20:49:02 [Test worker] DEBUG o.s.j.d.SimpleDriverDataSource - Creating new JDBC Driver Connection to [jdbc:postgresql://localhost:58275/product_db]
+2024-12-03 20:49:02 [Test worker] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:58275/product_db (PostgreSQL 17.2)
+2024-12-03 20:49:02 [Test worker] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Schema history table &quot;public&quot;.&quot;flyway_schema_history&quot; does not exist yet
+2024-12-03 20:49:02 [Test worker] INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.038s)
+2024-12-03 20:49:02 [Test worker] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table &quot;public&quot;.&quot;flyway_schema_history&quot; ...
+2024-12-03 20:49:02 [Test worker] DEBUG o.s.j.d.SimpleDriverDataSource - Creating new JDBC Driver Connection to [jdbc:postgresql://localhost:58275/product_db]
+2024-12-03 20:49:02 [Test worker] INFO  o.f.core.internal.command.DbMigrate - Current version of schema &quot;public&quot;: &lt;&lt; Empty Schema &gt;&gt;
+2024-12-03 20:49:02 [Test worker] WARN  o.f.core.internal.command.DbMigrate - outOfOrder mode is active. Migration of schema &quot;public&quot; may not be reproducible.
+2024-12-03 20:49:02 [Test worker] INFO  o.f.core.internal.command.DbMigrate - Migrating schema &quot;public&quot; to version &quot;1 - PG EXTENSIONS&quot;
+2024-12-03 20:49:02 [Test worker] INFO  o.f.core.internal.command.DbMigrate - Migrating schema &quot;public&quot; to version &quot;2 - CREATE PRODUCT TABLE&quot;
+2024-12-03 20:49:02 [Test worker] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 2 migrations to schema &quot;public&quot;, now at version v2 (execution time 00:00.028s)
+2024-12-03 20:49:02 [Test worker] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-03 20:49:03 [Test worker] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-03 20:49:03 [Test worker] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-03 20:49:03 [Test worker] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-03 20:49:03 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-03 20:49:03 [Test worker] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@21139739
+2024-12-03 20:49:03 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-03 20:49:03 [Test worker] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-03 20:49:05 [Test worker] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-03 20:49:05 [Test worker] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-03 20:49:06 [Test worker] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+Hibernate: insert into product (album_title,artist,price,promo_code,release_year) values (?,?,?,pgp_sym_encrypt(?::text,current_setting('encryption.key')),?) returning id
+Hibernate: insert into product (album_title,artist,price,promo_code,release_year) values (?,?,?,pgp_sym_encrypt(?::text,current_setting('encryption.key')),?) returning id
+2024-12-03 20:49:06 [Test worker] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-03 20:49:06 [Test worker] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2024-12-03 20:49:08 [Test worker] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [&quot;http-nio-auto-1&quot;]
+2024-12-03 20:49:08 [Test worker] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 58336 (http) with context path '/'
+2024-12-03 20:49:08 [Test worker] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 0 (http)
+2024-12-03 20:49:08 [Test worker] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler [&quot;http-nio-auto-2&quot;]
+2024-12-03 20:49:08 [Test worker] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-03 20:49:08 [Test worker] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-03 20:49:08 [Test worker] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-03 20:49:08 [Test worker] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 333 ms
+2024-12-03 20:49:08 [Test worker] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2024-12-03 20:49:08 [Test worker] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [&quot;http-nio-auto-2&quot;]
+2024-12-03 20:49:08 [Test worker] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 58337 (http) with context path '/'
+2024-12-03 20:49:08 [Test worker] INFO  c.s.product_api.InputValidationTest - Started InputValidationTest in 10.418 seconds (process running for 20.142)
+2024-12-03 20:49:09 [http-nio-auto-1-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-03 20:49:09 [http-nio-auto-1-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-03 20:49:10 [http-nio-auto-1-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+Model attributes: {productEntity=ProductEntity(id=0, artist=Loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo Artist, price=19.99, albumTitle=White Album, releaseYear=1968, promoCode=XYZ), org.springframework.validation.BindingResult.productEntity=org.springframework.validation.BeanPropertyBindingResult: 1 errors
+Field error in object 'productEntity' on field 'artist': rejected value [Loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo Artist]; codes [Size.productEntity.artist,Size.artist,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [productEntity.artist,artist]; arguments []; default message [artist],50,0]; default message [Artist be between 5 and 50 characters]}
+response.body() &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;style&gt;
+        .error {
+            color: red;
+        }
+    &lt;/style&gt;
+    &lt;title&gt;Add Product&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div&gt;
+    &lt;div&gt;
+        &lt;h2&gt;Add a Product&lt;/h2&gt;
+        &lt;form action=&quot;/portal/add-product&quot; method=&quot;post&quot; class=&quot;form&quot;&gt;
+
+            &lt;!-- Artist --&gt;
+            &lt;div&gt;
+                &lt;label for=&quot;artist&quot;&gt;Artist&lt;/label&gt;
+                &lt;input type=&quot;text&quot; id=&quot;artist&quot; placeholder=&quot;Artist&quot; name=&quot;artist&quot; value=&quot;Loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo Artist&quot;&gt;
+                &lt;ul&gt;
+                    &lt;li class=&quot;error&quot;&gt;Artist be between 5 and 50 characters&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+
+            &lt;!-- Album Title --&gt;
+            &lt;div&gt;
+                &lt;label for=&quot;albumTitle&quot;&gt;Album Title&lt;/label&gt;
+                &lt;input type=&quot;text&quot; id=&quot;albumTitle&quot; placeholder=&quot;Album Title&quot; name=&quot;albumTitle&quot; value=&quot;White Album&quot;&gt;
+                &lt;ul&gt;
+                    
+                &lt;/ul&gt;
+            &lt;/div&gt;
+
+            &lt;!-- Release Year --&gt;
+            &lt;div&gt;
+                &lt;label for=&quot;releaseYear&quot;&gt;Release Year&lt;/label&gt;
+                &lt;input type=&quot;number&quot; id=&quot;releaseYear&quot; placeholder=&quot;Release Year&quot; name=&quot;releaseYear&quot; value=&quot;1968&quot;&gt;
+                &lt;ul&gt;
+                    
+                &lt;/ul&gt;
+            &lt;/div&gt;
+
+            &lt;!-- Price --&gt;
+            &lt;div&gt;
+                &lt;label for=&quot;price&quot;&gt;Price&lt;/label&gt;
+                &lt;input type=&quot;number&quot; id=&quot;price&quot; step=&quot;0.01&quot; placeholder=&quot;Price&quot; name=&quot;price&quot; value=&quot;19.99&quot;&gt;
+                &lt;ul&gt;
+                    
+                &lt;/ul&gt;
+            &lt;/div&gt;
+
+            &lt;!-- Promo Code --&gt;
+            &lt;div&gt;
+                &lt;label for=&quot;promoCode&quot;&gt;Promo Code&lt;/label&gt;
+                &lt;input type=&quot;text&quot; id=&quot;promoCode&quot; placeholder=&quot;Promo Code&quot; name=&quot;promoCode&quot; value=&quot;XYZ&quot;&gt;
+                &lt;ul&gt;
+                    
+                &lt;/ul&gt;
+            &lt;/div&gt;
+
+            &lt;!-- All Errors --&gt;
+            &lt;h3&gt;All Validation Errors:&lt;/h3&gt;
+            &lt;div&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;Artist be between 5 and 50 characters&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+
+            &lt;!-- Submit Button --&gt;
+            &lt;input type=&quot;submit&quot; value=&quot;Add Product&quot;&gt;
+        &lt;/form&gt;
+
+        &lt;!-- General Navigation --&gt;
+        &lt;div class=&quot;buttons&quot;&gt;
+            &lt;a href=&quot;/portal/&quot;&gt;Home&lt;/a&gt;
+            &lt;a href=&quot;/portal/products&quot;&gt;Back to Product List&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+2024-12-03 20:49:11 [Test worker] INFO  tc.docker/compose:1.29.2 - Creating container for image: docker/compose:1.29.2
+2024-12-03 20:49:11 [Test worker] INFO  tc.docker/compose:1.29.2 - Container docker/compose:1.29.2 is starting: 1b12c7a4f876bf2aa83948863251c285428680555840fbcf06e4162313d61204
+2024-12-03 20:49:14 [Test worker] INFO  tc.docker/compose:1.29.2 - Container docker/compose:1.29.2 started in PT3.250338S
+2024-12-03 20:49:14 [Test worker] INFO  tc.docker/compose:1.29.2 - Docker Compose container is running for command: down -v
+2024-12-03 20:49:14 [docker-java-stream-1399464222] INFO  tc.docker/compose:1.29.2 - STDERR: Stopping yo7s2w5eekur_postgres_1 ... 
+2024-12-03 20:49:14 [docker-java-stream-1399464222] INFO  tc.docker/compose:1.29.2 - STDERR: Stopping yo7s2w5eekur_postgres_1 ... done
+2024-12-03 20:49:14 [docker-java-stream-1399464222] INFO  tc.docker/compose:1.29.2 - STDERR: Removing yo7s2w5eekur_postgres_1 ... 
+2024-12-03 20:49:14 [docker-java-stream-1399464222] INFO  tc.docker/compose:1.29.2 - STDERR: Removing yo7s2w5eekur_postgres_1 ... done
+2024-12-03 20:49:14 [docker-java-stream-1399464222] INFO  tc.docker/compose:1.29.2 - STDERR: Network damo_network is external, skipping
+2024-12-03 20:49:14 [Test worker] INFO  tc.docker/compose:1.29.2 - Docker Compose has finished running
+2024-12-03 20:49:14 [Test worker] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler [&quot;http-nio-auto-2-58337&quot;]
+2024-12-03 20:49:14 [Test worker] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-12-03 20:49:14 [Test worker] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler [&quot;http-nio-auto-1-58336&quot;]
+2024-12-03 20:49:14 [Test worker] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-03 20:49:14 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-03 20:49:14 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>WARNING: A Java agent has been loaded dynamically (/Users/grainneomalley/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.14.19/154da3a65b4f4a909d3e5bdec55d1b2b4cbb6ce1/byte-buddy-agent-1.14.19.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.10.2</a> at 3 Dec 2024, 20:49:15</p>
+</div>
+</div>
+</body>
+</html>
