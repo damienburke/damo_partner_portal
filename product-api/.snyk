@@ -1,5 +1,0 @@
-ignore:
-  SNYK-JAVA-ORGAPACHECOMMONS-6254296:
-    - '*':
-        reason: "Not relevant for our project context. See https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHECOMMONS-6254296"
-        expires: "2024-12-31"
