@@ -33,8 +33,6 @@ spring:
           uri: http://httpbin.org:80
           predicates:
             - Path=/get
-          filters:
-            - AddResponseHeader=foo, bar
 
   redis:
     host: redis

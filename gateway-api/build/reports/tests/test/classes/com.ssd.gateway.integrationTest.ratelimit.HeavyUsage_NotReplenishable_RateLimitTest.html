@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - HeavyUsage_NotReplenishable_RateLimitTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>HeavyUsage_NotReplenishable_RateLimitTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.ssd.gateway.integrationTest.ratelimit.html">com.ssd.gateway.integrationTest.ratelimit</a> &gt; HeavyUsage_NotReplenishable_RateLimitTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">9.118s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">hammer API()</td>
+<td class="success">9.118s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2024-12-04 12:42:21 [Test worker] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.ssd.gateway.integrationTest.ratelimit.HeavyUsage_NotReplenishable_RateLimitTest]: HeavyUsage_NotReplenishable_RateLimitTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-04 12:42:21 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.ssd.gateway.Application for test class com.ssd.gateway.integrationTest.ratelimit.HeavyUsage_NotReplenishable_RateLimitTest
+Project root directory: /Users/grainneomalley/damo/workspace/college/damo_partner_portal/gateway-api
+starting redis..
+2024-12-04 12:42:21 [Test worker] INFO  o.t.containers.ComposeDelegate - Preemptively checking local images for 'bitnami/redis:latest', referenced via a compose file or transitive Dockerfile. If not available, it will be pulled.
+2024-12-04 12:42:21 [Test worker] INFO  tc.docker/compose:1.29.2 - Copying all files in /Users/grainneomalley/damo/workspace/college/damo_partner_portal/gateway-api/local into the container
+2024-12-04 12:42:21 [Test worker] INFO  tc.docker/compose:1.29.2 - Creating container for image: docker/compose:1.29.2
+2024-12-04 12:42:21 [Test worker] INFO  tc.docker/compose:1.29.2 - Container docker/compose:1.29.2 is starting: 9013774dccbc7fbd0d4726c1381de13145f121e66c3ebb13a526ee10fd2f2bf8
+2024-12-04 12:42:23 [Test worker] INFO  tc.docker/compose:1.29.2 - Container docker/compose:1.29.2 started in PT2.294627S
+2024-12-04 12:42:23 [lettuce-nioEventLoop-7-5] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to localhost/&lt;unresolved&gt;:6379
+2024-12-04 12:42:23 [Test worker] INFO  tc.docker/compose:1.29.2 - Docker Compose container is running for command: up -d
+2024-12-04 12:42:23 [docker-java-stream--832427559] INFO  tc.docker/compose:1.29.2 - STDERR: Creating volume &quot;p2evegzsh1vx_redis&quot; with local driver
+2024-12-04 12:42:23 [docker-java-stream--832427559] INFO  tc.docker/compose:1.29.2 - STDERR: Creating p2evegzsh1vx_redis_1 ... 
+2024-12-04 12:42:23 [docker-java-stream--832427559] INFO  tc.docker/compose:1.29.2 - STDERR: Creating p2evegzsh1vx_redis_1 ... done
+2024-12-04 12:42:23 [Test worker] INFO  tc.docker/compose:1.29.2 - Docker Compose has finished running
+2024-12-04 12:42:23 [Test worker] INFO  tc.alpine/socat:1.7.4.3-r0 - Creating container for image: alpine/socat:1.7.4.3-r0
+2024-12-04 12:42:23 [Test worker] INFO  tc.alpine/socat:1.7.4.3-r0 - Container alpine/socat:1.7.4.3-r0 is starting: 7b2efee3b33f4c2ffb093c5312f83fc479f86ba137546c7c301da71288cf1462
+2024-12-04 12:42:24 [Test worker] INFO  tc.alpine/socat:1.7.4.3-r0 - Container alpine/socat:1.7.4.3-r0 started in PT0.571296S
+redis started
+ApiResponse(index=1, responseCode=200, remainingRateLimitTokens=18, requestTime=2024-12-04T12:42:27.459945)
+ApiResponse(index=0, responseCode=200, remainingRateLimitTokens=19, requestTime=2024-12-04T12:42:27.378485)
+ApiResponse(index=2, responseCode=200, remainingRateLimitTokens=17, requestTime=2024-12-04T12:42:27.541824)
+ApiResponse(index=3, responseCode=200, remainingRateLimitTokens=16, requestTime=2024-12-04T12:42:27.623952)
+ApiResponse(index=4, responseCode=200, remainingRateLimitTokens=15, requestTime=2024-12-04T12:42:27.704490)
+ApiResponse(index=5, responseCode=200, remainingRateLimitTokens=14, requestTime=2024-12-04T12:42:27.789960)
+ApiResponse(index=6, responseCode=200, remainingRateLimitTokens=13, requestTime=2024-12-04T12:42:27.870446)
+ApiResponse(index=7, responseCode=200, remainingRateLimitTokens=12, requestTime=2024-12-04T12:42:27.954838)
+ApiResponse(index=8, responseCode=200, remainingRateLimitTokens=19, requestTime=2024-12-04T12:42:28.038702)
+ApiResponse(index=9, responseCode=200, remainingRateLimitTokens=18, requestTime=2024-12-04T12:42:28.119405)
+ApiResponse(index=10, responseCode=200, remainingRateLimitTokens=17, requestTime=2024-12-04T12:42:28.200567)
+ApiResponse(index=11, responseCode=200, remainingRateLimitTokens=16, requestTime=2024-12-04T12:42:28.285400)
+ApiResponse(index=12, responseCode=200, remainingRateLimitTokens=15, requestTime=2024-12-04T12:42:28.368616)
+ApiResponse(index=13, responseCode=200, remainingRateLimitTokens=14, requestTime=2024-12-04T12:42:28.451371)
+ApiResponse(index=14, responseCode=200, remainingRateLimitTokens=13, requestTime=2024-12-04T12:42:28.532497)
+ApiResponse(index=15, responseCode=200, remainingRateLimitTokens=12, requestTime=2024-12-04T12:42:28.613574)
+ApiResponse(index=16, responseCode=200, remainingRateLimitTokens=11, requestTime=2024-12-04T12:42:28.696307)
+ApiResponse(index=18, responseCode=200, remainingRateLimitTokens=9, requestTime=2024-12-04T12:42:28.864778)
+ApiResponse(index=17, responseCode=200, remainingRateLimitTokens=10, requestTime=2024-12-04T12:42:28.780198)
+ApiResponse(index=20, responseCode=200, remainingRateLimitTokens=17, requestTime=2024-12-04T12:42:29.032616)
+ApiResponse(index=21, responseCode=200, remainingRateLimitTokens=16, requestTime=2024-12-04T12:42:29.113054)
+ApiResponse(index=22, responseCode=200, remainingRateLimitTokens=15, requestTime=2024-12-04T12:42:29.194225)
+ApiResponse(index=23, responseCode=200, remainingRateLimitTokens=14, requestTime=2024-12-04T12:42:29.277306)
+ApiResponse(index=25, responseCode=200, remainingRateLimitTokens=12, requestTime=2024-12-04T12:42:29.442071)
+ApiResponse(index=26, responseCode=200, remainingRateLimitTokens=11, requestTime=2024-12-04T12:42:29.524828)
+ApiResponse(index=19, responseCode=200, remainingRateLimitTokens=8, requestTime=2024-12-04T12:42:28.948972)
+ApiResponse(index=29, responseCode=200, remainingRateLimitTokens=8, requestTime=2024-12-04T12:42:29.777434)
+ApiResponse(index=24, responseCode=200, remainingRateLimitTokens=13, requestTime=2024-12-04T12:42:29.360068)
+ApiResponse(index=31, responseCode=200, remainingRateLimitTokens=6, requestTime=2024-12-04T12:42:29.946832)
+ApiResponse(index=27, responseCode=200, remainingRateLimitTokens=10, requestTime=2024-12-04T12:42:29.608339)
+ApiResponse(index=30, responseCode=200, remainingRateLimitTokens=7, requestTime=2024-12-04T12:42:29.861631)
+ApiResponse(index=32, responseCode=200, remainingRateLimitTokens=15, requestTime=2024-12-04T12:42:30.028843)
+ApiResponse(index=28, responseCode=200, remainingRateLimitTokens=9, requestTime=2024-12-04T12:42:29.692806)
+ApiResponse(index=33, responseCode=200, remainingRateLimitTokens=14, requestTime=2024-12-04T12:42:30.109506)
+ApiResponse(index=34, responseCode=200, remainingRateLimitTokens=13, requestTime=2024-12-04T12:42:30.191243)
+ApiResponse(index=36, responseCode=200, remainingRateLimitTokens=11, requestTime=2024-12-04T12:42:30.356641)
+ApiResponse(index=37, responseCode=200, remainingRateLimitTokens=10, requestTime=2024-12-04T12:42:30.438377)
+ApiResponse(index=38, responseCode=200, remainingRateLimitTokens=9, requestTime=2024-12-04T12:42:30.519544)
+ApiResponse(index=40, responseCode=200, remainingRateLimitTokens=7, requestTime=2024-12-04T12:42:30.686863)
+ApiResponse(index=35, responseCode=200, remainingRateLimitTokens=12, requestTime=2024-12-04T12:42:30.275931)
+ApiResponse(index=41, responseCode=200, remainingRateLimitTokens=6, requestTime=2024-12-04T12:42:30.771190)
+ApiResponse(index=43, responseCode=200, remainingRateLimitTokens=4, requestTime=2024-12-04T12:42:30.936706)
+ApiResponse(index=44, responseCode=200, remainingRateLimitTokens=13, requestTime=2024-12-04T12:42:31.019792)
+ApiResponse(index=42, responseCode=200, remainingRateLimitTokens=5, requestTime=2024-12-04T12:42:30.851814)
+ApiResponse(index=45, responseCode=200, remainingRateLimitTokens=12, requestTime=2024-12-04T12:42:31.101554)
+ApiResponse(index=46, responseCode=200, remainingRateLimitTokens=11, requestTime=2024-12-04T12:42:31.182833)
+ApiResponse(index=48, responseCode=200, remainingRateLimitTokens=9, requestTime=2024-12-04T12:42:31.348791)
+ApiResponse(index=49, responseCode=200, remainingRateLimitTokens=8, requestTime=2024-12-04T12:42:31.429942)
+ApiResponse(index=39, responseCode=200, remainingRateLimitTokens=8, requestTime=2024-12-04T12:42:30.602442)
+ApiResponse(index=50, responseCode=200, remainingRateLimitTokens=7, requestTime=2024-12-04T12:42:31.512437)
+ApiResponse(index=47, responseCode=200, remainingRateLimitTokens=10, requestTime=2024-12-04T12:42:31.264363)
+ApiResponse(index=51, responseCode=200, remainingRateLimitTokens=6, requestTime=2024-12-04T12:42:31.597635)
+ApiResponse(index=53, responseCode=200, remainingRateLimitTokens=4, requestTime=2024-12-04T12:42:31.762483)
+ApiResponse(index=55, responseCode=200, remainingRateLimitTokens=2, requestTime=2024-12-04T12:42:31.929603)
+ApiResponse(index=52, responseCode=200, remainingRateLimitTokens=5, requestTime=2024-12-04T12:42:31.679527)
+ApiResponse(index=57, responseCode=200, remainingRateLimitTokens=10, requestTime=2024-12-04T12:42:32.093244)
+ApiResponse(index=58, responseCode=200, remainingRateLimitTokens=9, requestTime=2024-12-04T12:42:32.173647)
+ApiResponse(index=56, responseCode=200, remainingRateLimitTokens=11, requestTime=2024-12-04T12:42:32.011983)
+ApiResponse(index=54, responseCode=200, remainingRateLimitTokens=3, requestTime=2024-12-04T12:42:31.847796)
+ApiResponse(index=59, responseCode=200, remainingRateLimitTokens=8, requestTime=2024-12-04T12:42:32.258713)
+ApiResponse(index=60, responseCode=200, remainingRateLimitTokens=7, requestTime=2024-12-04T12:42:32.342156)
+ApiResponse(index=61, responseCode=200, remainingRateLimitTokens=6, requestTime=2024-12-04T12:42:32.425893)
+ApiResponse(index=62, responseCode=200, remainingRateLimitTokens=5, requestTime=2024-12-04T12:42:32.510447)
+ApiResponse(index=63, responseCode=200, remainingRateLimitTokens=4, requestTime=2024-12-04T12:42:32.593501)
+ApiResponse(index=64, responseCode=200, remainingRateLimitTokens=3, requestTime=2024-12-04T12:42:32.679175)
+ApiResponse(index=65, responseCode=200, remainingRateLimitTokens=2, requestTime=2024-12-04T12:42:32.762091)
+ApiResponse(index=66, responseCode=200, remainingRateLimitTokens=1, requestTime=2024-12-04T12:42:32.843229)
+ApiResponse(index=67, responseCode=200, remainingRateLimitTokens=0, requestTime=2024-12-04T12:42:32.925722)
+ApiResponse(index=69, responseCode=200, remainingRateLimitTokens=8, requestTime=2024-12-04T12:42:33.094517)
+ApiResponse(index=71, responseCode=200, remainingRateLimitTokens=6, requestTime=2024-12-04T12:42:33.258384)
+ApiResponse(index=72, responseCode=200, remainingRateLimitTokens=5, requestTime=2024-12-04T12:42:33.341347)
+ApiResponse(index=73, responseCode=200, remainingRateLimitTokens=4, requestTime=2024-12-04T12:42:33.425179)
+ApiResponse(index=70, responseCode=200, remainingRateLimitTokens=7, requestTime=2024-12-04T12:42:33.175510)
+ApiResponse(index=68, responseCode=200, remainingRateLimitTokens=9, requestTime=2024-12-04T12:42:33.008946)
+ApiResponse(index=74, responseCode=200, remainingRateLimitTokens=3, requestTime=2024-12-04T12:42:33.508708)
+ApiResponse(index=75, responseCode=200, remainingRateLimitTokens=2, requestTime=2024-12-04T12:42:33.589545)
+ApiResponse(index=76, responseCode=200, remainingRateLimitTokens=1, requestTime=2024-12-04T12:42:33.670381)
+ApiResponse(index=78, responseCode=429, remainingRateLimitTokens=0, requestTime=2024-12-04T12:42:33.833034)
+ApiResponse(index=77, responseCode=200, remainingRateLimitTokens=0, requestTime=2024-12-04T12:42:33.752470)
+ApiResponse(index=79, responseCode=429, remainingRateLimitTokens=0, requestTime=2024-12-04T12:42:33.917915)
+ApiResponse(index=81, responseCode=200, remainingRateLimitTokens=8, requestTime=2024-12-04T12:42:34.085659)
+ApiResponse(index=82, responseCode=200, remainingRateLimitTokens=7, requestTime=2024-12-04T12:42:34.166906)
+ApiResponse(index=83, responseCode=200, remainingRateLimitTokens=6, requestTime=2024-12-04T12:42:34.249824)
+ApiResponse(index=84, responseCode=200, remainingRateLimitTokens=5, requestTime=2024-12-04T12:42:34.331445)
+ApiResponse(index=80, responseCode=200, remainingRateLimitTokens=9, requestTime=2024-12-04T12:42:34.000888)
+ApiResponse(index=86, responseCode=200, remainingRateLimitTokens=3, requestTime=2024-12-04T12:42:34.497071)
+ApiResponse(index=87, responseCode=200, remainingRateLimitTokens=2, requestTime=2024-12-04T12:42:34.577558)
+ApiResponse(index=88, responseCode=200, remainingRateLimitTokens=1, requestTime=2024-12-04T12:42:34.662471)
+ApiResponse(index=90, responseCode=429, remainingRateLimitTokens=0, requestTime=2024-12-04T12:42:34.830468)
+ApiResponse(index=91, responseCode=429, remainingRateLimitTokens=0, requestTime=2024-12-04T12:42:34.915647)
+ApiResponse(index=85, responseCode=200, remainingRateLimitTokens=4, requestTime=2024-12-04T12:42:34.415689)
+ApiResponse(index=92, responseCode=200, remainingRateLimitTokens=9, requestTime=2024-12-04T12:42:34.999833)
+ApiResponse(index=93, responseCode=200, remainingRateLimitTokens=8, requestTime=2024-12-04T12:42:35.084809)
+ApiResponse(index=95, responseCode=200, remainingRateLimitTokens=6, requestTime=2024-12-04T12:42:35.251918)
+ApiResponse(index=89, responseCode=200, remainingRateLimitTokens=0, requestTime=2024-12-04T12:42:34.746599)
+ApiResponse(index=96, responseCode=200, remainingRateLimitTokens=5, requestTime=2024-12-04T12:42:35.332885)
+ApiResponse(index=97, responseCode=200, remainingRateLimitTokens=4, requestTime=2024-12-04T12:42:35.416051)
+ApiResponse(index=99, responseCode=200, remainingRateLimitTokens=2, requestTime=2024-12-04T12:42:35.580664)
+ApiResponse(index=98, responseCode=200, remainingRateLimitTokens=3, requestTime=2024-12-04T12:42:35.496872)
+ApiResponse(index=94, responseCode=200, remainingRateLimitTokens=7, requestTime=2024-12-04T12:42:35.172115)
+200 Count: 96
+429 Count: 4
+Time difference: 8 seconds
+2024-12-04 12:42:36 [Test worker] INFO  tc.docker/compose:1.29.2 - Copying all files in /Users/grainneomalley/damo/workspace/college/damo_partner_portal/gateway-api/local into the container
+2024-12-04 12:42:36 [Test worker] INFO  tc.docker/compose:1.29.2 - Creating container for image: docker/compose:1.29.2
+2024-12-04 12:42:36 [Test worker] INFO  tc.docker/compose:1.29.2 - Container docker/compose:1.29.2 is starting: e23386db46e3fa7e8fc573a41b4c30d86fccb04464f28cf763b55e706eee178b
+2024-12-04 12:42:38 [lettuce-eventExecutorLoop-3-6] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was localhost/[0:0:0:0:0:0:0:1]:6379
+2024-12-04 12:42:38 [lettuce-nioEventLoop-7-6] WARN  i.l.core.protocol.ConnectionWatchdog - Cannot reconnect to [localhost/&lt;unresolved&gt;:6379]: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:255)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:356)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-12-04 12:42:42 [Test worker] INFO  tc.docker/compose:1.29.2 - Container docker/compose:1.29.2 started in PT5.349797S
+2024-12-04 12:42:42 [Test worker] INFO  tc.docker/compose:1.29.2 - Docker Compose container is running for command: down -v
+2024-12-04 12:42:42 [docker-java-stream--836278871] INFO  tc.docker/compose:1.29.2 - STDERR: Stopping p2evegzsh1vx_redis_1 ... 
+2024-12-04 12:42:42 [docker-java-stream--836278871] INFO  tc.docker/compose:1.29.2 - STDERR: Stopping p2evegzsh1vx_redis_1 ... done
+2024-12-04 12:42:42 [docker-java-stream--836278871] INFO  tc.docker/compose:1.29.2 - STDERR: Removing p2evegzsh1vx_redis_1 ... 
+2024-12-04 12:42:42 [docker-java-stream--836278871] INFO  tc.docker/compose:1.29.2 - STDERR: Removing p2evegzsh1vx_redis_1 ... done
+2024-12-04 12:42:42 [docker-java-stream--836278871] INFO  tc.docker/compose:1.29.2 - STDERR: Network damo_network is external, skipping
+2024-12-04 12:42:42 [docker-java-stream--836278871] INFO  tc.docker/compose:1.29.2 - STDERR: Removing volume p2evegzsh1vx_redis
+2024-12-04 12:42:42 [Test worker] INFO  tc.docker/compose:1.29.2 - Docker Compose has finished running
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.11.1</a> at 4 Dec 2024, 12:42:57</p>
+</div>
+</div>
+</body>
+</html>

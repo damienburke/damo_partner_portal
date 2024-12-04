@@ -1,4 +1,4 @@
-package com.ssd.gateway.ratelimit
+package com.ssd.gateway.integrationTest.ratelimit
 
 import org.springframework.boot.test.context.SpringBootTest
 

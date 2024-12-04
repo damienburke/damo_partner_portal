@@ -1,8 +1,7 @@
-package com.ssd.gateway.ratelimit
+package com.ssd.gateway.integrationTest.ratelimit
 
-import com.fasterxml.jackson.databind.ObjectMapper
-import com.ssd.gateway.BaseIT
-import com.ssd.gateway.baseUrl
+import com.ssd.gateway.integrationTest.BaseIT
+import com.ssd.gateway.integrationTest.baseUrl
 import kotlinx.coroutines.*
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.BeforeAll
@@ -13,7 +12,6 @@ import java.net.http.HttpResponse.BodyHandlers
 import java.time.Duration
 import java.time.LocalDateTime
 import java.util.concurrent.TimeUnit
-import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
 
 abstract class BaseRateLimitTest : BaseIT() {
 

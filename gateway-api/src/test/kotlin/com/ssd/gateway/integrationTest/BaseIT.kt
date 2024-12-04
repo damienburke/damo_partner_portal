@@ -1,4 +1,4 @@
-package com.ssd.gateway
+package com.ssd.gateway.integrationTest
 
 import org.junit.jupiter.api.AfterAll
 import org.junit.jupiter.api.BeforeAll
