@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">2.629s</div>
+<div class="counter">3.147s</div>
 <p>duration</p>
 </div>
 </td>
@@ -82,7 +82,7 @@
 </thead>
 <tr>
 <td class="success">hammer API()</td>
-<td class="success">2.629s</td>
+<td class="success">3.147s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -90,77 +90,56 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2024-12-03 09:48:51 [Test worker] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.ssd.gateway.ratelimit.BurstJustAboveMaxAllowedRateLimitTest]: BurstJustAboveMaxAllowedRateLimitTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-12-03 09:48:51 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.ssd.gateway.Application for test class com.ssd.gateway.ratelimit.BurstJustAboveMaxAllowedRateLimitTest
+<pre>2024-12-04 12:04:24 [Test worker] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.ssd.gateway.ratelimit.BurstJustAboveMaxAllowedRateLimitTest]: BurstJustAboveMaxAllowedRateLimitTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-04 12:04:24 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.ssd.gateway.Application for test class com.ssd.gateway.ratelimit.BurstJustAboveMaxAllowedRateLimitTest
 Project root directory: /Users/grainneomalley/damo/workspace/college/damo_partner_portal/gateway-api
-2024-12-03 09:48:51 [Test worker] INFO  o.testcontainers.images.PullPolicy - Image pull policy will be performed by: DefaultPullPolicy()
-2024-12-03 09:48:51 [Test worker] INFO  o.t.utility.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2024-12-04 12:04:25 [Test worker] INFO  o.testcontainers.images.PullPolicy - Image pull policy will be performed by: DefaultPullPolicy()
+2024-12-04 12:04:25 [Test worker] INFO  o.t.utility.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
 starting redis..
-2024-12-03 09:48:51 [Test worker] INFO  o.testcontainers.DockerClientFactory - Testcontainers version: 1.20.4
-2024-12-03 09:48:52 [Test worker] INFO  o.t.d.DockerClientProviderStrategy - Loaded org.testcontainers.dockerclient.UnixSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
-2024-12-03 09:48:52 [Test worker] INFO  o.t.d.DockerClientProviderStrategy - Found Docker environment with local Unix socket (unix:///var/run/docker.sock)
-2024-12-03 09:48:52 [Test worker] INFO  o.testcontainers.DockerClientFactory - Docker host IP address is localhost
-2024-12-03 09:48:52 [Test worker] INFO  o.testcontainers.DockerClientFactory - Connected to docker: 
+2024-12-04 12:04:25 [Test worker] INFO  o.testcontainers.DockerClientFactory - Testcontainers version: 1.20.4
+2024-12-04 12:04:25 [Test worker] INFO  o.t.d.DockerClientProviderStrategy - Loaded org.testcontainers.dockerclient.UnixSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2024-12-04 12:04:25 [Test worker] INFO  o.t.d.DockerClientProviderStrategy - Found Docker environment with local Unix socket (unix:///var/run/docker.sock)
+2024-12-04 12:04:25 [Test worker] INFO  o.testcontainers.DockerClientFactory - Docker host IP address is localhost
+2024-12-04 12:04:25 [Test worker] INFO  o.testcontainers.DockerClientFactory - Connected to docker: 
   Server Version: 27.2.0
   API Version: 1.47
   Operating System: Docker Desktop
   Total Memory: 7839 MB
   Labels: 
     com.docker.desktop.address=unix:///Users/grainneomalley/Library/Containers/com.docker.docker/Data/docker-cli.sock
-2024-12-03 09:48:52 [Test worker] INFO  o.t.utility.RyukResourceReaper - Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
-2024-12-03 09:48:52 [Test worker] INFO  o.testcontainers.DockerClientFactory - Checking the system...
-2024-12-03 09:48:52 [Test worker] INFO  o.testcontainers.DockerClientFactory - ✔︎ Docker server version should be at least 1.6.0
-2024-12-03 09:48:52 [Test worker] INFO  tc.testcontainers/ryuk:0.11.0 - Pulling docker image: testcontainers/ryuk:0.11.0. Please be patient; this may take some time but only needs to be done once.
-2024-12-03 09:48:52 [Test worker] INFO  o.t.utility.RegistryAuthLocator - Credential helper/store (docker-credential-desktop) does not have credentials for https://index.docker.io/v1/
-2024-12-03 09:48:54 [docker-java-stream--1327023394] INFO  tc.testcontainers/ryuk:0.11.0 - Starting to pull image
-2024-12-03 09:48:54 [docker-java-stream--1327023394] INFO  tc.testcontainers/ryuk:0.11.0 - Pulling image layers:  0 pending,  0 downloaded,  0 extracted, (0 bytes/0 bytes)
-2024-12-03 09:48:54 [docker-java-stream--1327023394] INFO  tc.testcontainers/ryuk:0.11.0 - Pulling image layers:  2 pending,  1 downloaded,  0 extracted, (3 MB/? MB)
-2024-12-03 09:48:55 [docker-java-stream--1327023394] INFO  tc.testcontainers/ryuk:0.11.0 - Pulling image layers:  1 pending,  2 downloaded,  0 extracted, (3 MB/? MB)
-2024-12-03 09:48:55 [docker-java-stream--1327023394] INFO  tc.testcontainers/ryuk:0.11.0 - Pulling image layers:  0 pending,  3 downloaded,  0 extracted, (7 MB/10 MB)
-2024-12-03 09:48:55 [docker-java-stream--1327023394] INFO  tc.testcontainers/ryuk:0.11.0 - Pull complete. 3 layers, pulled in 1s (downloaded 7 MB at 7 MB/s)
-2024-12-03 09:48:55 [Test worker] INFO  tc.testcontainers/ryuk:0.11.0 - Image testcontainers/ryuk:0.11.0 pull took PT2.862748S
-2024-12-03 09:48:55 [Test worker] INFO  tc.testcontainers/ryuk:0.11.0 - Creating container for image: testcontainers/ryuk:0.11.0
-2024-12-03 09:48:55 [Test worker] INFO  tc.testcontainers/ryuk:0.11.0 - Container testcontainers/ryuk:0.11.0 is starting: cd04baa7e26146e266619d57d45047e4271cb660e72e52f16a9ebf6b35382ba5
-2024-12-03 09:48:56 [Test worker] INFO  tc.testcontainers/ryuk:0.11.0 - Container testcontainers/ryuk:0.11.0 started in PT0.861285S
-2024-12-03 09:48:56 [Test worker] INFO  o.t.containers.ComposeDelegate - Preemptively checking local images for 'bitnami/redis:latest', referenced via a compose file or transitive Dockerfile. If not available, it will be pulled.
-2024-12-03 09:48:56 [Test worker] INFO  tc.bitnami/redis:latest - Pulling docker image: bitnami/redis:latest. Please be patient; this may take some time but only needs to be done once.
-2024-12-03 09:48:57 [docker-java-stream--1176849223] INFO  tc.bitnami/redis:latest - Starting to pull image
-2024-12-03 09:48:57 [docker-java-stream--1176849223] INFO  tc.bitnami/redis:latest - Pulling image layers:  0 pending,  0 downloaded,  0 extracted, (0 bytes/0 bytes)
-2024-12-03 09:49:00 [docker-java-stream--1176849223] INFO  tc.bitnami/redis:latest - Pulling image layers:  0 pending,  1 downloaded,  0 extracted, (48 MB/49 MB)
-2024-12-03 09:49:02 [docker-java-stream--1176849223] INFO  tc.bitnami/redis:latest - Pull complete. 1 layers, pulled in 4s (downloaded 48 MB at 12 MB/s)
-2024-12-03 09:49:02 [Test worker] INFO  tc.bitnami/redis:latest - Image bitnami/redis:latest pull took PT5.82029S
-2024-12-03 09:49:02 [Test worker] INFO  tc.docker/compose:1.29.2 - Pulling docker image: docker/compose:1.29.2. Please be patient; this may take some time but only needs to be done once.
-2024-12-03 09:49:03 [docker-java-stream-1010736535] INFO  tc.docker/compose:1.29.2 - Starting to pull image
-2024-12-03 09:49:03 [docker-java-stream-1010736535] INFO  tc.docker/compose:1.29.2 - Pulling image layers:  0 pending,  0 downloaded,  0 extracted, (0 bytes/0 bytes)
-2024-12-03 09:49:04 [docker-java-stream-1010736535] INFO  tc.docker/compose:1.29.2 - Pulling image layers:  3 pending,  1 downloaded,  0 extracted, (11 MB/? MB)
-2024-12-03 09:49:04 [docker-java-stream-1010736535] INFO  tc.docker/compose:1.29.2 - Pulling image layers:  2 pending,  2 downloaded,  0 extracted, (13 MB/? MB)
-2024-12-03 09:49:04 [docker-java-stream-1010736535] INFO  tc.docker/compose:1.29.2 - Pulling image layers:  1 pending,  3 downloaded,  0 extracted, (21 MB/? MB)
-2024-12-03 09:49:04 [docker-java-stream-1010736535] INFO  tc.docker/compose:1.29.2 - Pulling image layers:  0 pending,  4 downloaded,  0 extracted, (24 MB/27 MB)
-2024-12-03 09:49:05 [docker-java-stream-1010736535] INFO  tc.docker/compose:1.29.2 - Pull complete. 4 layers, pulled in 2s (downloaded 24 MB at 12 MB/s)
-2024-12-03 09:49:05 [Test worker] INFO  tc.docker/compose:1.29.2 - Image docker/compose:1.29.2 pull took PT3.084975S
-2024-12-03 09:49:05 [Test worker] INFO  tc.docker/compose:1.29.2 - Copying all files in /Users/grainneomalley/damo/workspace/college/damo_partner_portal/gateway-api/local into the container
-2024-12-03 09:49:05 [Test worker] INFO  tc.docker/compose:1.29.2 - Creating container for image: docker/compose:1.29.2
-2024-12-03 09:49:05 [Test worker] INFO  tc.alpine:3.17 - Pulling docker image: alpine:3.17. Please be patient; this may take some time but only needs to be done once.
-2024-12-03 09:49:06 [docker-java-stream-1039059310] INFO  tc.alpine:3.17 - Starting to pull image
-2024-12-03 09:49:06 [docker-java-stream-1039059310] INFO  tc.alpine:3.17 - Pulling image layers:  0 pending,  0 downloaded,  0 extracted, (0 bytes/0 bytes)
-2024-12-03 09:49:07 [docker-java-stream-1039059310] INFO  tc.alpine:3.17 - Pulling image layers:  0 pending,  1 downloaded,  0 extracted, (2 MB/3 MB)
-2024-12-03 09:49:07 [Test worker] INFO  tc.alpine:3.17 - Image alpine:3.17 pull took PT1.715181S
-2024-12-03 09:49:08 [Test worker] INFO  tc.docker/compose:1.29.2 - Container docker/compose:1.29.2 is starting: e9175551cf5458869209c2927db7ab88a053957bf17a9f711fec5e9961f29d45
-2024-12-03 09:49:11 [Test worker] INFO  tc.docker/compose:1.29.2 - Container docker/compose:1.29.2 started in PT5.719665S
-2024-12-03 09:49:11 [Test worker] INFO  tc.docker/compose:1.29.2 - Docker Compose container is running for command: up -d
-2024-12-03 09:49:11 [docker-java-stream--1117059013] INFO  tc.docker/compose:1.29.2 - STDERR: Creating volume &quot;kub5zmpwwpc8_redis&quot; with local driver
-2024-12-03 09:49:11 [docker-java-stream--1117059013] INFO  tc.docker/compose:1.29.2 - STDERR: Creating kub5zmpwwpc8_redis_1 ... 
-2024-12-03 09:49:11 [docker-java-stream--1117059013] INFO  tc.docker/compose:1.29.2 - STDERR: Creating kub5zmpwwpc8_redis_1 ... done
-2024-12-03 09:49:11 [Test worker] INFO  tc.docker/compose:1.29.2 - Docker Compose has finished running
-2024-12-03 09:49:11 [Test worker] INFO  tc.alpine/socat:1.7.4.3-r0 - Pulling docker image: alpine/socat:1.7.4.3-r0. Please be patient; this may take some time but only needs to be done once.
-2024-12-03 09:49:12 [docker-java-stream--42785102] INFO  tc.alpine/socat:1.7.4.3-r0 - Starting to pull image
-2024-12-03 09:49:12 [docker-java-stream--42785102] INFO  tc.alpine/socat:1.7.4.3-r0 - Pulling image layers:  0 pending,  0 downloaded,  0 extracted, (0 bytes/0 bytes)
-2024-12-03 09:49:12 [docker-java-stream--42785102] INFO  tc.alpine/socat:1.7.4.3-r0 - Pulling image layers:  1 pending,  1 downloaded,  0 extracted, (0 bytes/? MB)
-2024-12-03 09:49:13 [docker-java-stream--42785102] INFO  tc.alpine/socat:1.7.4.3-r0 - Pulling image layers:  0 pending,  2 downloaded,  0 extracted, (0 bytes/0 bytes)
-2024-12-03 09:49:13 [Test worker] INFO  tc.alpine/socat:1.7.4.3-r0 - Image alpine/socat:1.7.4.3-r0 pull took PT1.984668S
-2024-12-03 09:49:13 [Test worker] INFO  tc.alpine/socat:1.7.4.3-r0 - Creating container for image: alpine/socat:1.7.4.3-r0
-2024-12-03 09:49:13 [Test worker] INFO  tc.alpine/socat:1.7.4.3-r0 - Container alpine/socat:1.7.4.3-r0 is starting: bc79df22e2eda5727b66fee2d893e33bf3dc28b19f079daf27944ef5079ad853
-2024-12-03 09:49:13 [Test worker] INFO  tc.alpine/socat:1.7.4.3-r0 - Container alpine/socat:1.7.4.3-r0 started in PT0.666701S
+2024-12-04 12:04:25 [Test worker] INFO  o.t.utility.RyukResourceReaper - Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2024-12-04 12:04:25 [Test worker] INFO  o.testcontainers.DockerClientFactory - Checking the system...
+2024-12-04 12:04:25 [Test worker] INFO  o.testcontainers.DockerClientFactory - ✔︎ Docker server version should be at least 1.6.0
+2024-12-04 12:04:26 [Test worker] INFO  tc.testcontainers/ryuk:0.11.0 - Pulling docker image: testcontainers/ryuk:0.11.0. Please be patient; this may take some time but only needs to be done once.
+2024-12-04 12:04:27 [docker-java-stream--1769513352] INFO  tc.testcontainers/ryuk:0.11.0 - Starting to pull image
+2024-12-04 12:04:27 [docker-java-stream--1769513352] INFO  tc.testcontainers/ryuk:0.11.0 - Pulling image layers:  0 pending,  0 downloaded,  0 extracted, (0 bytes/0 bytes)
+2024-12-04 12:04:28 [docker-java-stream--1769513352] INFO  tc.testcontainers/ryuk:0.11.0 - Pulling image layers:  2 pending,  1 downloaded,  0 extracted, (4 MB/? MB)
+2024-12-04 12:04:28 [docker-java-stream--1769513352] INFO  tc.testcontainers/ryuk:0.11.0 - Pulling image layers:  1 pending,  2 downloaded,  0 extracted, (6 MB/? MB)
+2024-12-04 12:04:28 [docker-java-stream--1769513352] INFO  tc.testcontainers/ryuk:0.11.0 - Pulling image layers:  0 pending,  3 downloaded,  0 extracted, (6 MB/10 MB)
+2024-12-04 12:04:28 [docker-java-stream--1769513352] INFO  tc.testcontainers/ryuk:0.11.0 - Pull complete. 3 layers, pulled in 1s (downloaded 6 MB at 6 MB/s)
+2024-12-04 12:04:28 [Test worker] INFO  tc.testcontainers/ryuk:0.11.0 - Image testcontainers/ryuk:0.11.0 pull took PT2.744145S
+2024-12-04 12:04:29 [Test worker] INFO  tc.testcontainers/ryuk:0.11.0 - Creating container for image: testcontainers/ryuk:0.11.0
+2024-12-04 12:04:29 [Test worker] INFO  tc.testcontainers/ryuk:0.11.0 - Container testcontainers/ryuk:0.11.0 is starting: e147f868d1dfcdfcc2e4aec94f89ac7a6e6c6e4f6943e3cf9d967ac833093cb5
+2024-12-04 12:04:30 [Test worker] INFO  tc.testcontainers/ryuk:0.11.0 - Container testcontainers/ryuk:0.11.0 started in PT1.179375S
+2024-12-04 12:04:30 [Test worker] INFO  o.t.containers.ComposeDelegate - Preemptively checking local images for 'bitnami/redis:latest', referenced via a compose file or transitive Dockerfile. If not available, it will be pulled.
+2024-12-04 12:04:30 [Test worker] INFO  tc.bitnami/redis:latest - Pulling docker image: bitnami/redis:latest. Please be patient; this may take some time but only needs to be done once.
+2024-12-04 12:04:31 [docker-java-stream--1619339181] INFO  tc.bitnami/redis:latest - Starting to pull image
+2024-12-04 12:04:31 [docker-java-stream--1619339181] INFO  tc.bitnami/redis:latest - Pulling image layers:  0 pending,  0 downloaded,  0 extracted, (0 bytes/0 bytes)
+2024-12-04 12:04:33 [docker-java-stream--1619339181] INFO  tc.bitnami/redis:latest - Pulling image layers:  0 pending,  1 downloaded,  0 extracted, (47 MB/49 MB)
+2024-12-04 12:04:37 [docker-java-stream--1619339181] INFO  tc.bitnami/redis:latest - Pull complete. 1 layers, pulled in 5s (downloaded 47 MB at 9 MB/s)
+2024-12-04 12:04:37 [Test worker] INFO  tc.bitnami/redis:latest - Image bitnami/redis:latest pull took PT6.928765S
+2024-12-04 12:04:37 [Test worker] INFO  tc.docker/compose:1.29.2 - Copying all files in /Users/grainneomalley/damo/workspace/college/damo_partner_portal/gateway-api/local into the container
+2024-12-04 12:04:37 [Test worker] INFO  tc.docker/compose:1.29.2 - Creating container for image: docker/compose:1.29.2
+2024-12-04 12:04:38 [Test worker] INFO  tc.docker/compose:1.29.2 - Container docker/compose:1.29.2 is starting: 7765fbdbbb74fbbf61472f30c2ace2e65cefcdf944c71d1e86f1a8a4d9b04cd4
+2024-12-04 12:04:41 [Test worker] INFO  tc.docker/compose:1.29.2 - Container docker/compose:1.29.2 started in PT4.397905S
+2024-12-04 12:04:41 [Test worker] INFO  tc.docker/compose:1.29.2 - Docker Compose container is running for command: up -d
+2024-12-04 12:04:41 [docker-java-stream--21644576] INFO  tc.docker/compose:1.29.2 - STDERR: Creating volume &quot;zuyeaerputdd_redis&quot; with local driver
+2024-12-04 12:04:41 [docker-java-stream--21644576] INFO  tc.docker/compose:1.29.2 - STDERR: Creating zuyeaerputdd_redis_1 ... 
+2024-12-04 12:04:41 [docker-java-stream--21644576] INFO  tc.docker/compose:1.29.2 - STDERR: Creating zuyeaerputdd_redis_1 ... done
+2024-12-04 12:04:41 [Test worker] INFO  tc.docker/compose:1.29.2 - Docker Compose has finished running
+2024-12-04 12:04:41 [Test worker] INFO  tc.alpine/socat:1.7.4.3-r0 - Creating container for image: alpine/socat:1.7.4.3-r0
+2024-12-04 12:04:41 [Test worker] INFO  tc.alpine/socat:1.7.4.3-r0 - Container alpine/socat:1.7.4.3-r0 is starting: 8654b840ec509763eeb4c7d41622501eb84042509a8eda314eba0dea76c3273e
+2024-12-04 12:04:42 [Test worker] INFO  tc.alpine/socat:1.7.4.3-r0 - Container alpine/socat:1.7.4.3-r0 started in PT0.862534S
 redis started
 
   .   ____          _            __ _ _
@@ -172,59 +151,59 @@ redis started
 
  :: Spring Boot ::                (v3.4.0)
 
-2024-12-03 09:49:18 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
-2024-12-03 09:49:18 [Test worker] INFO  c.s.g.r.BurstJustAboveMaxAllowedRateLimitTest - Starting BurstJustAboveMaxAllowedRateLimitTest using Java 21.0.4 with PID 42456 (started by ? in /Users/grainneomalley/damo/workspace/college/damo_partner_portal/gateway-api)
-2024-12-03 09:49:18 [Test worker] INFO  c.s.g.r.BurstJustAboveMaxAllowedRateLimitTest - No active profile set, falling back to 1 default profile: &quot;default&quot;
-2024-12-03 09:49:19 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2024-12-03 09:49:19 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2024-12-03 09:49:19 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 0 Redis repository interfaces.
-2024-12-03 09:49:20 [Test worker] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=2e2a56a3-0052-3876-a15e-5e6b25161f95
+2024-12-04 12:04:46 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-04 12:04:46 [Test worker] INFO  c.s.g.r.BurstJustAboveMaxAllowedRateLimitTest - Starting BurstJustAboveMaxAllowedRateLimitTest using Java 21.0.4 with PID 62966 (started by grainneomalley in /Users/grainneomalley/damo/workspace/college/damo_partner_portal/gateway-api)
+2024-12-04 12:04:46 [Test worker] INFO  c.s.g.r.BurstJustAboveMaxAllowedRateLimitTest - No active profile set, falling back to 1 default profile: &quot;default&quot;
+2024-12-04 12:04:47 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-04 12:04:47 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-04 12:04:47 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2024-12-04 12:04:47 [Test worker] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=2e2a56a3-0052-3876-a15e-5e6b25161f95
 redisConfig.host localhost
-2024-12-03 09:49:22 [Test worker] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
-2024-12-03 09:49:22 [Test worker] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
-2024-12-03 09:49:22 [Test worker] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
-2024-12-03 09:49:22 [Test worker] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
-2024-12-03 09:49:22 [Test worker] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
-2024-12-03 09:49:22 [Test worker] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
-2024-12-03 09:49:22 [Test worker] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
-2024-12-03 09:49:22 [Test worker] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
-2024-12-03 09:49:22 [Test worker] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
-2024-12-03 09:49:22 [Test worker] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
-2024-12-03 09:49:22 [Test worker] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
-2024-12-03 09:49:22 [Test worker] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
-2024-12-03 09:49:22 [Test worker] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
-2024-12-03 09:49:22 [Test worker] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
-2024-12-03 09:49:22 [Test worker] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port 54083 (http)
-2024-12-03 09:49:22 [Test worker] INFO  c.s.g.r.BurstJustAboveMaxAllowedRateLimitTest - Started BurstJustAboveMaxAllowedRateLimitTest in 5.342 seconds (process running for 32.935)
-ApiResponse(index=19, responseCode=429, remainingRateLimitTokens=0, requestTime=2024-12-03T09:49:24.038989)
-ApiResponse(index=2, responseCode=200, remainingRateLimitTokens=14, requestTime=2024-12-03T09:49:24.037180)
-ApiResponse(index=11, responseCode=200, remainingRateLimitTokens=10, requestTime=2024-12-03T09:49:24.037143)
-ApiResponse(index=3, responseCode=200, remainingRateLimitTokens=12, requestTime=2024-12-03T09:49:24.037072)
-ApiResponse(index=7, responseCode=200, remainingRateLimitTokens=7, requestTime=2024-12-03T09:49:24.037419)
-ApiResponse(index=15, responseCode=200, remainingRateLimitTokens=5, requestTime=2024-12-03T09:49:24.037591)
-ApiResponse(index=0, responseCode=200, remainingRateLimitTokens=1, requestTime=2024-12-03T09:49:24.037453)
-ApiResponse(index=4, responseCode=200, remainingRateLimitTokens=0, requestTime=2024-12-03T09:49:24.037117)
-ApiResponse(index=12, responseCode=200, remainingRateLimitTokens=11, requestTime=2024-12-03T09:49:24.037101)
-ApiResponse(index=16, responseCode=200, remainingRateLimitTokens=13, requestTime=2024-12-03T09:49:24.037862)
-ApiResponse(index=13, responseCode=200, remainingRateLimitTokens=4, requestTime=2024-12-03T09:49:24.037301)
-ApiResponse(index=9, responseCode=200, remainingRateLimitTokens=9, requestTime=2024-12-03T09:49:24.037072)
-ApiResponse(index=1, responseCode=200, remainingRateLimitTokens=6, requestTime=2024-12-03T09:49:24.037456)
-ApiResponse(index=18, responseCode=200, remainingRateLimitTokens=18, requestTime=2024-12-03T09:49:24.038503)
-ApiResponse(index=14, responseCode=200, remainingRateLimitTokens=3, requestTime=2024-12-03T09:49:24.037591)
-ApiResponse(index=5, responseCode=200, remainingRateLimitTokens=8, requestTime=2024-12-03T09:49:24.037145)
-ApiResponse(index=10, responseCode=200, remainingRateLimitTokens=16, requestTime=2024-12-03T09:49:24.037234)
-ApiResponse(index=20, responseCode=200, remainingRateLimitTokens=19, requestTime=2024-12-03T09:49:24.039578)
-ApiResponse(index=6, responseCode=200, remainingRateLimitTokens=15, requestTime=2024-12-03T09:49:24.037413)
-ApiResponse(index=8, responseCode=200, remainingRateLimitTokens=2, requestTime=2024-12-03T09:49:24.037345)
-ApiResponse(index=17, responseCode=200, remainingRateLimitTokens=17, requestTime=2024-12-03T09:49:24.037795)
+2024-12-04 12:04:49 [Test worker] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2024-12-04 12:04:49 [Test worker] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2024-12-04 12:04:49 [Test worker] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2024-12-04 12:04:49 [Test worker] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2024-12-04 12:04:49 [Test worker] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2024-12-04 12:04:49 [Test worker] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2024-12-04 12:04:49 [Test worker] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2024-12-04 12:04:49 [Test worker] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2024-12-04 12:04:49 [Test worker] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2024-12-04 12:04:49 [Test worker] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+2024-12-04 12:04:49 [Test worker] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2024-12-04 12:04:49 [Test worker] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2024-12-04 12:04:49 [Test worker] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2024-12-04 12:04:49 [Test worker] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2024-12-04 12:04:49 [Test worker] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port 53019 (http)
+2024-12-04 12:04:49 [Test worker] INFO  c.s.g.r.BurstJustAboveMaxAllowedRateLimitTest - Started BurstJustAboveMaxAllowedRateLimitTest in 3.889 seconds (process running for 26.59)
+ApiResponse(index=12, responseCode=429, remainingRateLimitTokens=0, requestTime=2024-12-04T12:04:51.049488)
+ApiResponse(index=8, responseCode=200, remainingRateLimitTokens=14, requestTime=2024-12-04T12:04:51.048637)
+ApiResponse(index=6, responseCode=200, remainingRateLimitTokens=4, requestTime=2024-12-04T12:04:51.049401)
+ApiResponse(index=15, responseCode=200, remainingRateLimitTokens=13, requestTime=2024-12-04T12:04:51.049092)
+ApiResponse(index=7, responseCode=200, remainingRateLimitTokens=2, requestTime=2024-12-04T12:04:51.048835)
+ApiResponse(index=19, responseCode=200, remainingRateLimitTokens=7, requestTime=2024-12-04T12:04:51.050728)
+ApiResponse(index=10, responseCode=200, remainingRateLimitTokens=8, requestTime=2024-12-04T12:04:51.049608)
+ApiResponse(index=4, responseCode=200, remainingRateLimitTokens=11, requestTime=2024-12-04T12:04:51.049521)
+ApiResponse(index=14, responseCode=200, remainingRateLimitTokens=1, requestTime=2024-12-04T12:04:51.049208)
+ApiResponse(index=5, responseCode=200, remainingRateLimitTokens=15, requestTime=2024-12-04T12:04:51.050046)
+ApiResponse(index=20, responseCode=200, remainingRateLimitTokens=10, requestTime=2024-12-04T12:04:51.050728)
+ApiResponse(index=1, responseCode=200, remainingRateLimitTokens=12, requestTime=2024-12-04T12:04:51.049317)
+ApiResponse(index=18, responseCode=200, remainingRateLimitTokens=16, requestTime=2024-12-04T12:04:51.049913)
+ApiResponse(index=3, responseCode=200, remainingRateLimitTokens=19, requestTime=2024-12-04T12:04:51.049147)
+ApiResponse(index=13, responseCode=200, remainingRateLimitTokens=5, requestTime=2024-12-04T12:04:51.048557)
+ApiResponse(index=9, responseCode=200, remainingRateLimitTokens=0, requestTime=2024-12-04T12:04:51.048557)
+ApiResponse(index=16, responseCode=200, remainingRateLimitTokens=18, requestTime=2024-12-04T12:04:51.049354)
+ApiResponse(index=0, responseCode=200, remainingRateLimitTokens=6, requestTime=2024-12-04T12:04:51.049872)
+ApiResponse(index=17, responseCode=200, remainingRateLimitTokens=3, requestTime=2024-12-04T12:04:51.050148)
+ApiResponse(index=2, responseCode=200, remainingRateLimitTokens=9, requestTime=2024-12-04T12:04:51.050174)
+ApiResponse(index=11, responseCode=200, remainingRateLimitTokens=17, requestTime=2024-12-04T12:04:51.049039)
 429 Count: 1
 200 Count: 20
 Time difference: 0 seconds
-2024-12-03 09:49:25 [Test worker] INFO  tc.docker/compose:1.29.2 - Copying all files in /Users/grainneomalley/damo/workspace/college/damo_partner_portal/gateway-api/local into the container
-2024-12-03 09:49:25 [Test worker] INFO  tc.docker/compose:1.29.2 - Creating container for image: docker/compose:1.29.2
-2024-12-03 09:49:25 [Test worker] INFO  tc.docker/compose:1.29.2 - Container docker/compose:1.29.2 is starting: 80ce8141ab133ee45c1f94ce8e4accbae74196925b66b1119c6cfcc90943292e
-2024-12-03 09:49:27 [lettuce-eventExecutorLoop-3-2] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was localhost/[0:0:0:0:0:0:0:1]:6379
-2024-12-03 09:49:27 [lettuce-nioEventLoop-7-2] WARN  i.l.core.protocol.ConnectionWatchdog - Cannot reconnect to [localhost/&lt;unresolved&gt;:6379]: Connection closed prematurely
+2024-12-04 12:04:53 [Test worker] INFO  tc.docker/compose:1.29.2 - Copying all files in /Users/grainneomalley/damo/workspace/college/damo_partner_portal/gateway-api/local into the container
+2024-12-04 12:04:53 [Test worker] INFO  tc.docker/compose:1.29.2 - Creating container for image: docker/compose:1.29.2
+2024-12-04 12:04:53 [Test worker] INFO  tc.docker/compose:1.29.2 - Container docker/compose:1.29.2 is starting: 48ecdd8e876d5d6cd9bbcca5dc0e462fbecba557a3d58d799139088218f9a8fe
+2024-12-04 12:04:55 [lettuce-eventExecutorLoop-3-2] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was localhost/[0:0:0:0:0:0:0:1]:6379
+2024-12-04 12:04:55 [lettuce-nioEventLoop-7-2] WARN  i.l.core.protocol.ConnectionWatchdog - Cannot reconnect to [localhost/&lt;unresolved&gt;:6379]: Connection closed prematurely
 io.lettuce.core.RedisConnectionException: Connection closed prematurely
 	at io.lettuce.core.protocol.RedisHandshakeHandler.channelInactive(RedisHandshakeHandler.java:76)
 	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:303)
@@ -248,15 +227,15 @@ io.lettuce.core.RedisConnectionException: Connection closed prematurely
 	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-2024-12-03 09:49:28 [Test worker] INFO  tc.docker/compose:1.29.2 - Container docker/compose:1.29.2 started in PT2.436781S
-2024-12-03 09:49:28 [Test worker] INFO  tc.docker/compose:1.29.2 - Docker Compose container is running for command: down -v
-2024-12-03 09:49:28 [docker-java-stream--545957875] INFO  tc.docker/compose:1.29.2 - STDERR: Stopping kub5zmpwwpc8_redis_1 ... 
-2024-12-03 09:49:28 [docker-java-stream--545957875] INFO  tc.docker/compose:1.29.2 - STDERR: Stopping kub5zmpwwpc8_redis_1 ... done
-2024-12-03 09:49:28 [docker-java-stream--545957875] INFO  tc.docker/compose:1.29.2 - STDERR: Removing kub5zmpwwpc8_redis_1 ... 
-2024-12-03 09:49:28 [docker-java-stream--545957875] INFO  tc.docker/compose:1.29.2 - STDERR: Removing kub5zmpwwpc8_redis_1 ... done
-2024-12-03 09:49:28 [docker-java-stream--545957875] INFO  tc.docker/compose:1.29.2 - STDERR: Network damo_network is external, skipping
-2024-12-03 09:49:28 [docker-java-stream--545957875] INFO  tc.docker/compose:1.29.2 - STDERR: Removing volume kub5zmpwwpc8_redis
-2024-12-03 09:49:28 [Test worker] INFO  tc.docker/compose:1.29.2 - Docker Compose has finished running
+2024-12-04 12:04:55 [Test worker] INFO  tc.docker/compose:1.29.2 - Container docker/compose:1.29.2 started in PT2.51132S
+2024-12-04 12:04:55 [Test worker] INFO  tc.docker/compose:1.29.2 - Docker Compose container is running for command: down -v
+2024-12-04 12:04:55 [docker-java-stream-356106499] INFO  tc.docker/compose:1.29.2 - STDERR: Stopping zuyeaerputdd_redis_1 ... 
+2024-12-04 12:04:55 [docker-java-stream-356106499] INFO  tc.docker/compose:1.29.2 - STDERR: Stopping zuyeaerputdd_redis_1 ... done
+2024-12-04 12:04:55 [docker-java-stream-356106499] INFO  tc.docker/compose:1.29.2 - STDERR: Removing zuyeaerputdd_redis_1 ... 
+2024-12-04 12:04:55 [docker-java-stream-356106499] INFO  tc.docker/compose:1.29.2 - STDERR: Removing zuyeaerputdd_redis_1 ... done
+2024-12-04 12:04:55 [docker-java-stream-356106499] INFO  tc.docker/compose:1.29.2 - STDERR: Network damo_network is external, skipping
+2024-12-04 12:04:55 [docker-java-stream-356106499] INFO  tc.docker/compose:1.29.2 - STDERR: Removing volume zuyeaerputdd_redis
+2024-12-04 12:04:55 [Test worker] INFO  tc.docker/compose:1.29.2 - Docker Compose has finished running
 </pre>
 </span>
 </div>
@@ -279,7 +258,7 @@ WARNING: Dynamic loading of agents will be disallowed by default in a future rel
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.11.1</a> at 3 Dec 2024, 09:50:14</p>
+<a href="http://www.gradle.org">Gradle 8.11.1</a> at 4 Dec 2024, 12:05:40</p>
 </div>
 </div>
 </body>

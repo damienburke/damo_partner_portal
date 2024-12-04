@@ -56,7 +56,7 @@ tasks.withType<Test> {
 
 jib {
 	from {
-		image = "openjdk:21-jdk"
+		image = "gcr.io/distroless/java21-debian12"
 	}
 	to {
 		image = "gateway-api:0.0.1-SNAPSHOT"

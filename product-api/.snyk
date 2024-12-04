@@ -1,0 +1,6 @@
+# .snyk file
+ignore:
+  "SNYK-JAVA-ORGAPACHECOMMONS-6254296":
+    - '*':
+        reason: "Ignoring vulnerability due to lack of direct upgrade or patch."
+        expires: "2024-12-31T23:59:59Z"
