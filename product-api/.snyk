@@ -1,4 +1,3 @@
-# .snyk file
 ignore:
   "SNYK-JAVA-ORGAPACHECOMMONS-6254296":
     - '*':
