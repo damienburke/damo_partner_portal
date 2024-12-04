@@ -1,4 +1,4 @@
-package com.ssd.product_api
+package com.ssd.integrationTest
 
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
@@ -10,7 +10,7 @@ import java.net.http.HttpRequest.BodyPublishers
 import java.net.http.HttpResponse.BodyHandlers
 import java.nio.charset.StandardCharsets
 
-class InputValidationTest : BaseIT() {
+class InputValidationIT : BaseIT() {
 
     @LocalServerPort
     var port: Int = 0

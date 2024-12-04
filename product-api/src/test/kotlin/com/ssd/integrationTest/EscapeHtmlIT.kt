@@ -1,4 +1,4 @@
-package com.ssd.product_api
+package com.ssd.integrationTest
 
 import com.ssd.persistance.entities.ProductEntity
 import org.assertj.core.api.Assertions.assertThat
@@ -8,7 +8,7 @@ import java.net.URI
 import java.net.http.HttpRequest
 import java.net.http.HttpResponse.BodyHandlers
 
-class EscapeHtmlTest : BaseIT() {
+class EscapeHtmlIT : BaseIT() {
 
     @LocalServerPort
     var port: Int = 0

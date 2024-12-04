@@ -1,6 +1,5 @@
 .idea/
 
-*snyk
 product-api/snyk
 
 # Compiled class file

@@ -11,7 +11,7 @@
 ```bash
 cd local
 docker-compose -f docker-compose.base.yaml -f docker-compose.app.yaml down --volumes
-docker-compose -f docker-compose.base.yaml -f docker-compose.app.yaml up -d --build
+docker-compose -f docker-compose.base.yaml -f docker-compose.app.yaml up -d
 ```
 
 # Security scan

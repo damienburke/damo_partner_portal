@@ -40,11 +40,6 @@ spring:
     prefix: classpath:/templates/
     suffix: .html
 
-  docker:
-    compose:
-      skip:
-        in-tests: false
-
 management:
   server:
     port: 8081

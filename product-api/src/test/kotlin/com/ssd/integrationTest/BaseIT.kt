@@ -1,4 +1,4 @@
-package com.ssd.product_api
+package com.ssd.integrationTest
 
 import com.ssd.persistance.repository.ProductRepository
 import org.junit.jupiter.api.AfterAll

@@ -1,4 +1,4 @@
-package com.ssd.product_api
+package com.ssd.integrationTest
 
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
@@ -7,7 +7,7 @@ import java.net.URI
 import java.net.http.HttpRequest
 import java.net.http.HttpResponse.BodyHandlers
 
-class ProductApiApplicationTests : BaseIT() {
+class ProductApiIT : BaseIT() {
 
     @LocalServerPort
     var port: Int = 0
