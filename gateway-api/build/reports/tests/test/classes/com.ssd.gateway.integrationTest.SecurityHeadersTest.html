@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">1</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">3.527s</div>
+<div class="counter">2.656s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">0%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,36 +61,16 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
+<a href="#tab0">Tests</a>
 </li>
 <li>
-<a href="#tab1">Tests</a>
+<a href="#tab1">Standard output</a>
 </li>
 <li>
-<a href="#tab2">Standard output</a>
-</li>
-<li>
-<a href="#tab3">Standard error</a>
+<a href="#tab2">Standard error</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="check headers()"></a>
-<h3 class="failures">check headers()</h3>
-<span class="code">
-<pre>org.opentest4j.AssertionFailedError: 
-expected: &quot;none)&quot;
- but was: &quot;none&quot;
-	at app//com.ssd.gateway.integrationTest.SecurityHeadersTest.check headers(SecurityHeadersTest.kt:27)
-	at java.base@21.0.4/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base@21.0.4/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base@21.0.4/java.util.ArrayList.forEach(ArrayList.java:1596)
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -101,51 +81,51 @@ expected: &quot;none)&quot;
 </tr>
 </thead>
 <tr>
-<td class="failures">check headers()</td>
-<td class="failures">3.527s</td>
-<td class="failures">failed</td>
+<td class="success">check headers()</td>
+<td class="success">2.656s</td>
+<td class="success">passed</td>
 </tr>
 </table>
 </div>
-<div id="tab2" class="tab">
+<div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2024-12-04 12:41:36 [Test worker] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.ssd.gateway.integrationTest.SecurityHeadersTest]: SecurityHeadersTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-12-04 12:41:37 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.ssd.gateway.Application for test class com.ssd.gateway.integrationTest.SecurityHeadersTest
+<pre>2024-12-04 12:44:01 [Test worker] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.ssd.gateway.integrationTest.SecurityHeadersTest]: SecurityHeadersTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-04 12:44:01 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.ssd.gateway.Application for test class com.ssd.gateway.integrationTest.SecurityHeadersTest
 Project root directory: /Users/grainneomalley/damo/workspace/college/damo_partner_portal/gateway-api
-2024-12-04 12:41:38 [Test worker] INFO  o.testcontainers.images.PullPolicy - Image pull policy will be performed by: DefaultPullPolicy()
-2024-12-04 12:41:38 [Test worker] INFO  o.t.utility.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2024-12-04 12:44:01 [Test worker] INFO  o.testcontainers.images.PullPolicy - Image pull policy will be performed by: DefaultPullPolicy()
+2024-12-04 12:44:01 [Test worker] INFO  o.t.utility.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
 starting redis..
-2024-12-04 12:41:38 [Test worker] INFO  o.testcontainers.DockerClientFactory - Testcontainers version: 1.20.4
-2024-12-04 12:41:38 [Test worker] INFO  o.t.d.DockerClientProviderStrategy - Loaded org.testcontainers.dockerclient.UnixSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
-2024-12-04 12:41:39 [Test worker] INFO  o.t.d.DockerClientProviderStrategy - Found Docker environment with local Unix socket (unix:///var/run/docker.sock)
-2024-12-04 12:41:39 [Test worker] INFO  o.testcontainers.DockerClientFactory - Docker host IP address is localhost
-2024-12-04 12:41:39 [Test worker] INFO  o.testcontainers.DockerClientFactory - Connected to docker: 
+2024-12-04 12:44:01 [Test worker] INFO  o.testcontainers.DockerClientFactory - Testcontainers version: 1.20.4
+2024-12-04 12:44:02 [Test worker] INFO  o.t.d.DockerClientProviderStrategy - Loaded org.testcontainers.dockerclient.UnixSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2024-12-04 12:44:02 [Test worker] INFO  o.t.d.DockerClientProviderStrategy - Found Docker environment with local Unix socket (unix:///var/run/docker.sock)
+2024-12-04 12:44:02 [Test worker] INFO  o.testcontainers.DockerClientFactory - Docker host IP address is localhost
+2024-12-04 12:44:02 [Test worker] INFO  o.testcontainers.DockerClientFactory - Connected to docker: 
   Server Version: 27.2.0
   API Version: 1.47
   Operating System: Docker Desktop
   Total Memory: 7839 MB
   Labels: 
     com.docker.desktop.address=unix:///Users/grainneomalley/Library/Containers/com.docker.docker/Data/docker-cli.sock
-2024-12-04 12:41:39 [Test worker] INFO  o.t.utility.RyukResourceReaper - Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
-2024-12-04 12:41:39 [Test worker] INFO  o.testcontainers.DockerClientFactory - Checking the system...
-2024-12-04 12:41:39 [Test worker] INFO  o.testcontainers.DockerClientFactory - ✔︎ Docker server version should be at least 1.6.0
-2024-12-04 12:41:39 [Test worker] INFO  tc.testcontainers/ryuk:0.11.0 - Creating container for image: testcontainers/ryuk:0.11.0
-2024-12-04 12:41:39 [Test worker] INFO  tc.testcontainers/ryuk:0.11.0 - Container testcontainers/ryuk:0.11.0 is starting: 53ab6a54b68a5a3114efe3e8bda7903ee059a36a2fd6bf1bdbe41dffdd141bc7
-2024-12-04 12:41:40 [Test worker] INFO  tc.testcontainers/ryuk:0.11.0 - Container testcontainers/ryuk:0.11.0 started in PT0.841292S
-2024-12-04 12:41:40 [Test worker] INFO  o.t.containers.ComposeDelegate - Preemptively checking local images for 'bitnami/redis:latest', referenced via a compose file or transitive Dockerfile. If not available, it will be pulled.
-2024-12-04 12:41:40 [Test worker] INFO  tc.docker/compose:1.29.2 - Copying all files in /Users/grainneomalley/damo/workspace/college/damo_partner_portal/gateway-api/local into the container
-2024-12-04 12:41:40 [Test worker] INFO  tc.docker/compose:1.29.2 - Creating container for image: docker/compose:1.29.2
-2024-12-04 12:41:40 [Test worker] INFO  tc.docker/compose:1.29.2 - Container docker/compose:1.29.2 is starting: 30880e4fccfd7d3f9e4f678a0ebb713e7ccf115b07d4ec2b028391470a43cc74
-2024-12-04 12:41:43 [Test worker] INFO  tc.docker/compose:1.29.2 - Container docker/compose:1.29.2 started in PT2.676539S
-2024-12-04 12:41:43 [Test worker] INFO  tc.docker/compose:1.29.2 - Docker Compose container is running for command: up -d
-2024-12-04 12:41:43 [docker-java-stream--1520158570] INFO  tc.docker/compose:1.29.2 - STDERR: Creating volume &quot;wvvpfgu2cri3_redis&quot; with local driver
-2024-12-04 12:41:43 [docker-java-stream--1520158570] INFO  tc.docker/compose:1.29.2 - STDERR: Creating wvvpfgu2cri3_redis_1 ... 
-2024-12-04 12:41:43 [docker-java-stream--1520158570] INFO  tc.docker/compose:1.29.2 - STDERR: Creating wvvpfgu2cri3_redis_1 ... done
-2024-12-04 12:41:43 [Test worker] INFO  tc.docker/compose:1.29.2 - Docker Compose has finished running
-2024-12-04 12:41:43 [Test worker] INFO  tc.alpine/socat:1.7.4.3-r0 - Creating container for image: alpine/socat:1.7.4.3-r0
-2024-12-04 12:41:43 [Test worker] INFO  tc.alpine/socat:1.7.4.3-r0 - Container alpine/socat:1.7.4.3-r0 is starting: 0f6a1791799dd8d1cbf7a85d38c090681ac49c22b094b1857bea764ff126e349
-2024-12-04 12:41:43 [Test worker] INFO  tc.alpine/socat:1.7.4.3-r0 - Container alpine/socat:1.7.4.3-r0 started in PT0.586402S
+2024-12-04 12:44:02 [Test worker] INFO  o.t.utility.RyukResourceReaper - Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2024-12-04 12:44:02 [Test worker] INFO  o.testcontainers.DockerClientFactory - Checking the system...
+2024-12-04 12:44:02 [Test worker] INFO  o.testcontainers.DockerClientFactory - ✔︎ Docker server version should be at least 1.6.0
+2024-12-04 12:44:02 [Test worker] INFO  tc.testcontainers/ryuk:0.11.0 - Creating container for image: testcontainers/ryuk:0.11.0
+2024-12-04 12:44:03 [Test worker] INFO  tc.testcontainers/ryuk:0.11.0 - Container testcontainers/ryuk:0.11.0 is starting: 8cc12aeb89771c48bc4a409203c72e12255b561d949fbb5e82023fb54bdbeda6
+2024-12-04 12:44:03 [Test worker] INFO  tc.testcontainers/ryuk:0.11.0 - Container testcontainers/ryuk:0.11.0 started in PT0.800579S
+2024-12-04 12:44:03 [Test worker] INFO  o.t.containers.ComposeDelegate - Preemptively checking local images for 'bitnami/redis:latest', referenced via a compose file or transitive Dockerfile. If not available, it will be pulled.
+2024-12-04 12:44:03 [Test worker] INFO  tc.docker/compose:1.29.2 - Copying all files in /Users/grainneomalley/damo/workspace/college/damo_partner_portal/gateway-api/local into the container
+2024-12-04 12:44:03 [Test worker] INFO  tc.docker/compose:1.29.2 - Creating container for image: docker/compose:1.29.2
+2024-12-04 12:44:04 [Test worker] INFO  tc.docker/compose:1.29.2 - Container docker/compose:1.29.2 is starting: 5545e847e074def97798ca78603d26813ae82f4e4477cf1d7684bf63e8a6ed46
+2024-12-04 12:44:06 [Test worker] INFO  tc.docker/compose:1.29.2 - Container docker/compose:1.29.2 started in PT2.935085S
+2024-12-04 12:44:06 [Test worker] INFO  tc.docker/compose:1.29.2 - Docker Compose container is running for command: up -d
+2024-12-04 12:44:06 [docker-java-stream--1153430291] INFO  tc.docker/compose:1.29.2 - STDERR: Creating volume &quot;e4gfmu6fbvb9_redis&quot; with local driver
+2024-12-04 12:44:06 [docker-java-stream--1153430291] INFO  tc.docker/compose:1.29.2 - STDERR: Creating e4gfmu6fbvb9_redis_1 ... 
+2024-12-04 12:44:06 [docker-java-stream--1153430291] INFO  tc.docker/compose:1.29.2 - STDERR: Creating e4gfmu6fbvb9_redis_1 ... done
+2024-12-04 12:44:06 [Test worker] INFO  tc.docker/compose:1.29.2 - Docker Compose has finished running
+2024-12-04 12:44:06 [Test worker] INFO  tc.alpine/socat:1.7.4.3-r0 - Creating container for image: alpine/socat:1.7.4.3-r0
+2024-12-04 12:44:06 [Test worker] INFO  tc.alpine/socat:1.7.4.3-r0 - Container alpine/socat:1.7.4.3-r0 is starting: 11d7817b3a60255f010e71fdd5def8af24ce7e7aae5b0ee3e0bd85e8c2071dcd
+2024-12-04 12:44:07 [Test worker] INFO  tc.alpine/socat:1.7.4.3-r0 - Container alpine/socat:1.7.4.3-r0 started in PT0.576738S
 redis started
 
   .   ____          _            __ _ _
@@ -157,35 +137,35 @@ redis started
 
  :: Spring Boot ::                (v3.4.0)
 
-2024-12-04 12:41:44 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
-2024-12-04 12:41:44 [Test worker] INFO  c.s.g.i.SecurityHeadersTest - Starting SecurityHeadersTest using Java 21.0.4 with PID 64098 (started by grainneomalley in /Users/grainneomalley/damo/workspace/college/damo_partner_portal/gateway-api)
-2024-12-04 12:41:44 [Test worker] INFO  c.s.g.i.SecurityHeadersTest - No active profile set, falling back to 1 default profile: &quot;default&quot;
-2024-12-04 12:41:45 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2024-12-04 12:41:45 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2024-12-04 12:41:45 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
-2024-12-04 12:41:46 [Test worker] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=8076b5d6-90f7-31c7-9730-0f3c7fb7fcc0
+2024-12-04 12:44:08 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-04 12:44:08 [Test worker] INFO  c.s.g.i.SecurityHeadersTest - Starting SecurityHeadersTest using Java 21.0.4 with PID 64165 (started by grainneomalley in /Users/grainneomalley/damo/workspace/college/damo_partner_portal/gateway-api)
+2024-12-04 12:44:08 [Test worker] INFO  c.s.g.i.SecurityHeadersTest - No active profile set, falling back to 1 default profile: &quot;default&quot;
+2024-12-04 12:44:09 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-04 12:44:09 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-04 12:44:09 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+2024-12-04 12:44:09 [Test worker] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=8076b5d6-90f7-31c7-9730-0f3c7fb7fcc0
 redisConfig.host localhost
-2024-12-04 12:41:48 [Test worker] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
-2024-12-04 12:41:48 [Test worker] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
-2024-12-04 12:41:48 [Test worker] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
-2024-12-04 12:41:48 [Test worker] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
-2024-12-04 12:41:48 [Test worker] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
-2024-12-04 12:41:48 [Test worker] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
-2024-12-04 12:41:48 [Test worker] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
-2024-12-04 12:41:48 [Test worker] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
-2024-12-04 12:41:48 [Test worker] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
-2024-12-04 12:41:48 [Test worker] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
-2024-12-04 12:41:48 [Test worker] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
-2024-12-04 12:41:48 [Test worker] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
-2024-12-04 12:41:48 [Test worker] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
-2024-12-04 12:41:48 [Test worker] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
-2024-12-04 12:41:48 [Test worker] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port 54297 (http)
-2024-12-04 12:41:48 [Test worker] INFO  c.s.g.i.SecurityHeadersTest - Started SecurityHeadersTest in 4.424 seconds (process running for 14.125)
-2024-12-04 12:41:52 [Test worker] INFO  tc.docker/compose:1.29.2 - Copying all files in /Users/grainneomalley/damo/workspace/college/damo_partner_portal/gateway-api/local into the container
-2024-12-04 12:41:52 [Test worker] INFO  tc.docker/compose:1.29.2 - Creating container for image: docker/compose:1.29.2
-2024-12-04 12:41:52 [Test worker] INFO  tc.docker/compose:1.29.2 - Container docker/compose:1.29.2 is starting: da94596e2d4751be7ae3df9882fc7affe06d0ebf21da01296255a777b10f62af
-2024-12-04 12:41:54 [lettuce-eventExecutorLoop-3-2] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was localhost/[0:0:0:0:0:0:0:1]:6379
-2024-12-04 12:41:54 [lettuce-nioEventLoop-7-2] WARN  i.l.core.protocol.ConnectionWatchdog - Cannot reconnect to [localhost/&lt;unresolved&gt;:6379]: Connection closed prematurely
+2024-12-04 12:44:11 [Test worker] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2024-12-04 12:44:11 [Test worker] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2024-12-04 12:44:11 [Test worker] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2024-12-04 12:44:11 [Test worker] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2024-12-04 12:44:11 [Test worker] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2024-12-04 12:44:11 [Test worker] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2024-12-04 12:44:11 [Test worker] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2024-12-04 12:44:11 [Test worker] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2024-12-04 12:44:11 [Test worker] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2024-12-04 12:44:11 [Test worker] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+2024-12-04 12:44:11 [Test worker] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2024-12-04 12:44:11 [Test worker] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2024-12-04 12:44:11 [Test worker] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2024-12-04 12:44:11 [Test worker] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2024-12-04 12:44:12 [Test worker] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port 54494 (http)
+2024-12-04 12:44:12 [Test worker] INFO  c.s.g.i.SecurityHeadersTest - Started SecurityHeadersTest in 4.543 seconds (process running for 12.434)
+2024-12-04 12:44:15 [Test worker] INFO  tc.docker/compose:1.29.2 - Copying all files in /Users/grainneomalley/damo/workspace/college/damo_partner_portal/gateway-api/local into the container
+2024-12-04 12:44:15 [Test worker] INFO  tc.docker/compose:1.29.2 - Creating container for image: docker/compose:1.29.2
+2024-12-04 12:44:15 [Test worker] INFO  tc.docker/compose:1.29.2 - Container docker/compose:1.29.2 is starting: b4147cf3b288ec75432041896c0a589f0ebbc944a8cff4a3e6844b5a2673043c
+2024-12-04 12:44:16 [lettuce-eventExecutorLoop-3-2] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was localhost/[0:0:0:0:0:0:0:1]:6379
+2024-12-04 12:44:16 [lettuce-nioEventLoop-7-2] WARN  i.l.core.protocol.ConnectionWatchdog - Cannot reconnect to [localhost/&lt;unresolved&gt;:6379]: Connection closed prematurely
 io.lettuce.core.RedisConnectionException: Connection closed prematurely
 	at io.lettuce.core.protocol.RedisHandshakeHandler.channelInactive(RedisHandshakeHandler.java:76)
 	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:303)
@@ -209,19 +189,19 @@ io.lettuce.core.RedisConnectionException: Connection closed prematurely
 	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-2024-12-04 12:41:58 [Test worker] INFO  tc.docker/compose:1.29.2 - Container docker/compose:1.29.2 started in PT6.335274S
-2024-12-04 12:41:58 [Test worker] INFO  tc.docker/compose:1.29.2 - Docker Compose container is running for command: down -v
-2024-12-04 12:41:58 [docker-java-stream--1871784608] INFO  tc.docker/compose:1.29.2 - STDERR: Stopping wvvpfgu2cri3_redis_1 ... 
-2024-12-04 12:41:58 [docker-java-stream--1871784608] INFO  tc.docker/compose:1.29.2 - STDERR: Stopping wvvpfgu2cri3_redis_1 ... done
-2024-12-04 12:41:58 [docker-java-stream--1871784608] INFO  tc.docker/compose:1.29.2 - STDERR: Removing wvvpfgu2cri3_redis_1 ... 
-2024-12-04 12:41:58 [docker-java-stream--1871784608] INFO  tc.docker/compose:1.29.2 - STDERR: Removing wvvpfgu2cri3_redis_1 ... done
-2024-12-04 12:41:58 [docker-java-stream--1871784608] INFO  tc.docker/compose:1.29.2 - STDERR: Network damo_network is external, skipping
-2024-12-04 12:41:58 [docker-java-stream--1871784608] INFO  tc.docker/compose:1.29.2 - STDERR: Removing volume wvvpfgu2cri3_redis
-2024-12-04 12:41:58 [Test worker] INFO  tc.docker/compose:1.29.2 - Docker Compose has finished running
+2024-12-04 12:44:20 [Test worker] INFO  tc.docker/compose:1.29.2 - Container docker/compose:1.29.2 started in PT5.345326S
+2024-12-04 12:44:20 [Test worker] INFO  tc.docker/compose:1.29.2 - Docker Compose container is running for command: down -v
+2024-12-04 12:44:20 [docker-java-stream-39045924] INFO  tc.docker/compose:1.29.2 - STDERR: Stopping e4gfmu6fbvb9_redis_1 ... 
+2024-12-04 12:44:20 [docker-java-stream-39045924] INFO  tc.docker/compose:1.29.2 - STDERR: Stopping e4gfmu6fbvb9_redis_1 ... done
+2024-12-04 12:44:20 [docker-java-stream-39045924] INFO  tc.docker/compose:1.29.2 - STDERR: Removing e4gfmu6fbvb9_redis_1 ... 
+2024-12-04 12:44:20 [docker-java-stream-39045924] INFO  tc.docker/compose:1.29.2 - STDERR: Removing e4gfmu6fbvb9_redis_1 ... done
+2024-12-04 12:44:20 [docker-java-stream-39045924] INFO  tc.docker/compose:1.29.2 - STDERR: Network damo_network is external, skipping
+2024-12-04 12:44:20 [docker-java-stream-39045924] INFO  tc.docker/compose:1.29.2 - STDERR: Removing volume e4gfmu6fbvb9_redis
+2024-12-04 12:44:20 [Test worker] INFO  tc.docker/compose:1.29.2 - Docker Compose has finished running
 </pre>
 </span>
 </div>
-<div id="tab3" class="tab">
+<div id="tab2" class="tab">
 <h2>Standard error</h2>
 <span class="code">
 <pre>Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build what is described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org/mockito/Mockito.html#0.3
@@ -240,7 +220,7 @@ WARNING: Dynamic loading of agents will be disallowed by default in a future rel
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.11.1</a> at 4 Dec 2024, 12:42:57</p>
+<a href="http://www.gradle.org">Gradle 8.11.1</a> at 4 Dec 2024, 12:44:23</p>
 </div>
 </div>
 </body>
