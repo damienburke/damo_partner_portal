@@ -1,7 +1,13 @@
 .idea/
 
+../../.DS_Store
 product-api/build/
 gateway-api/build/
+/.gradle/
+*/.gradle/*
+gateway-api/.gradle/*
+product-api/.gradle/*
+gateway-api/.DS_Store
 
 product-api/snyk
 

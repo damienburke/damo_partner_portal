@@ -1,0 +1,23 @@
+
+
+services:
+
+  owasp:
+    container_name: zaproxy
+    image: ghcr.io/zaproxy/zaproxy:stable
+    entrypoint: >
+      zap-baseline.py -t https://gateway-api:8091/portal/products
+      -r testreport.html
+    command: >
+      /bin/bash -c "zap.sh -certload /zap/damoportal.crt &&
+      sleep 10"
+    volumes:
+      - ./../local/CA/out/damoportal.crt:/zap/damoportal.crt
+      - ./results:/zap/wrk
+    networks:
+      - damo_network
+    restart: always
+
+networks:
+  damo_network:
+    external: true
