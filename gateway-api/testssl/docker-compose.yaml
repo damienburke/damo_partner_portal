@@ -1,0 +1,16 @@
+services:
+  testssl:
+    image: drwetter/testssl.sh:latest
+    container_name: testssl
+    entrypoint: [ "testssl.sh" ]
+    command: [ "--log", "--json","https://gateway-api:8091" ]
+    working_dir: /data
+    volumes:
+      - ./results:/data
+    networks:
+      - damo_network
+    restart: no
+
+networks:
+  damo_network:
+    external: true

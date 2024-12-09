@@ -1,0 +1,1138 @@
+[
+         {
+              "id"           : "service",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "HTTP"
+          }
+,         {
+              "id"           : "pre_128cipher",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "No 128 cipher limit bug"
+          }
+,         {
+              "id"           : "SSLv2",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "OK",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "SSLv3",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "OK",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "TLS1",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "TLS1_1",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "TLS1_2",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "OK",
+              "finding"      : "offered"
+          }
+,         {
+              "id"           : "TLS1_3",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "OK",
+              "finding"      : "offered with final"
+          }
+,         {
+              "id"           : "NPN",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "ALPN",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "cipherlist_NULL",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "OK",
+              "cwe"          : "CWE-327",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "cipherlist_aNULL",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "OK",
+              "cwe"          : "CWE-327",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "cipherlist_EXPORT",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "OK",
+              "cwe"          : "CWE-327",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "cipherlist_LOW",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "OK",
+              "cwe"          : "CWE-327",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "cipherlist_3DES_IDEA",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "cwe"          : "CWE-310",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "cipherlist_OBSOLETED",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "LOW",
+              "cwe"          : "CWE-310",
+              "finding"      : "offered"
+          }
+,         {
+              "id"           : "cipherlist_STRONG_NOFS",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "OK",
+              "finding"      : "offered"
+          }
+,         {
+              "id"           : "cipherlist_STRONG_FS",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "OK",
+              "finding"      : "offered"
+          }
+,         {
+              "id"           : "cipher_order-tls1_2",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "OK",
+              "finding"      : "server"
+          }
+,         {
+              "id"           : "cipher-tls1_2_xc02f",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "OK",
+              "finding"      : "TLSv1.2   xc02f   ECDHE-RSA-AES128-GCM-SHA256       ECDH 521   AESGCM      128      TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256"
+          }
+,         {
+              "id"           : "cipher-tls1_2_xc030",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "OK",
+              "finding"      : "TLSv1.2   xc030   ECDHE-RSA-AES256-GCM-SHA384       ECDH 521   AESGCM      256      TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384"
+          }
+,         {
+              "id"           : "cipher-tls1_2_xc013",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "LOW",
+              "finding"      : "TLSv1.2   xc013   ECDHE-RSA-AES128-SHA              ECDH 521   AES         128      TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA"
+          }
+,         {
+              "id"           : "cipher-tls1_2_xc014",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "LOW",
+              "finding"      : "TLSv1.2   xc014   ECDHE-RSA-AES256-SHA              ECDH 521   AES         256      TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA"
+          }
+,         {
+              "id"           : "cipher-tls1_2_x9c",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "OK",
+              "finding"      : "TLSv1.2   x9c     AES128-GCM-SHA256                 RSA        AESGCM      128      TLS_RSA_WITH_AES_128_GCM_SHA256"
+          }
+,         {
+              "id"           : "cipher-tls1_2_x2f",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "LOW",
+              "finding"      : "TLSv1.2   x2f     AES128-SHA                        RSA        AES         128      TLS_RSA_WITH_AES_128_CBC_SHA"
+          }
+,         {
+              "id"           : "cipher-tls1_2_x35",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "LOW",
+              "finding"      : "TLSv1.2   x35     AES256-SHA                        RSA        AES         256      TLS_RSA_WITH_AES_256_CBC_SHA"
+          }
+,         {
+              "id"           : "cipherorder_TLSv1_2",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "ECDHE-RSA-AES128-GCM-SHA256 ECDHE-RSA-AES256-GCM-SHA384 ECDHE-RSA-AES128-SHA ECDHE-RSA-AES256-SHA AES128-GCM-SHA256 AES128-SHA AES256-SHA"
+          }
+,         {
+              "id"           : "cipher_order-tls1_3",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "OK",
+              "finding"      : "server"
+          }
+,         {
+              "id"           : "cipher-tls1_3_x1301",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "OK",
+              "finding"      : "TLSv1.3   x1301   TLS_AES_128_GCM_SHA256            ECDH 253   AESGCM      128      TLS_AES_128_GCM_SHA256"
+          }
+,         {
+              "id"           : "cipher-tls1_3_x1302",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "OK",
+              "finding"      : "TLSv1.3   x1302   TLS_AES_256_GCM_SHA384            ECDH 253   AESGCM      256      TLS_AES_256_GCM_SHA384"
+          }
+,         {
+              "id"           : "cipherorder_TLSv1_3",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "TLS_AES_128_GCM_SHA256 TLS_AES_256_GCM_SHA384"
+          }
+,         {
+              "id"           : "cipher_order",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "OK",
+              "finding"      : "server"
+          }
+,         {
+              "id"           : "FS",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "OK",
+              "finding"      : "offered"
+          }
+,         {
+              "id"           : "FS_ciphers",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "TLS_AES_256_GCM_SHA384 ECDHE-RSA-AES256-GCM-SHA384 ECDHE-RSA-AES256-SHA TLS_AES_128_GCM_SHA256 ECDHE-RSA-AES128-GCM-SHA256 ECDHE-RSA-AES128-SHA"
+          }
+,         {
+              "id"           : "FS_ECDHE_curves",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "OK",
+              "finding"      : "prime256v1 secp384r1 secp521r1 X25519 X448"
+          }
+,         {
+              "id"           : "DH_groups",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "OK",
+              "finding"      : "ffdhe2048 ffdhe3072 ffdhe4096 ffdhe6144 ffdhe8192"
+          }
+,         {
+              "id"           : "FS_TLS12_sig_algs",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "LOW",
+              "finding"      : "RSA+SHA1 RSA+SHA224 RSA+SHA256 RSA+SHA384 RSA+SHA512 RSA-PSS-RSAE+SHA256 RSA-PSS-RSAE+SHA384 RSA-PSS-RSAE+SHA512"
+          }
+,         {
+              "id"           : "FS_TLS13_sig_algs",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "RSA-PSS-RSAE+SHA256 RSA-PSS-RSAE+SHA384 RSA-PSS-RSAE+SHA512"
+          }
+,         {
+              "id"           : "TLS_extensions",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "'session ticket/#35' 'renegotiation info/#65281' 'supported versions/#43' 'key share/#51' 'supported_groups/#10' 'max fragment length/#1' 'extended master secret/#23'"
+          }
+,         {
+              "id"           : "TLS_session_ticket",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "valid for 86400 seconds only (<daily)"
+          }
+,         {
+              "id"           : "SSL_sessionID_support",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "yes"
+          }
+,         {
+              "id"           : "sessionresumption_ticket",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "not supported"
+          }
+,         {
+              "id"           : "sessionresumption_ID",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "not supported"
+          }
+,         {
+              "id"           : "TLS_timestamp",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "random"
+          }
+,         {
+              "id"           : "certificate_compression",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "none"
+          }
+,         {
+              "id"           : "clientAuth",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "none"
+          }
+,         {
+              "id"           : "cert_numbers",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "1"
+          }
+,         {
+              "id"           : "cert_signatureAlgorithm",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "OK",
+              "finding"      : "SHA256 with RSA"
+          }
+,         {
+              "id"           : "cert_keySize",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "RSA 2048 bits (exponent is 65537)"
+          }
+,         {
+              "id"           : "cert_keyUsage",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "No server key usage information"
+          }
+,         {
+              "id"           : "cert_extKeyUsage",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "No server extended key usage information"
+          }
+,         {
+              "id"           : "cert_serialNumber",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "26895BD0A87A8688A6BE8E014258FBC2BD9FA0ED"
+          }
+,         {
+              "id"           : "cert_serialNumberLen",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "20"
+          }
+,         {
+              "id"           : "cert_fingerprintSHA1",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "CD2927CE522FDE6AE0381B1B869937D0DD2CDDC4"
+          }
+,         {
+              "id"           : "cert_fingerprintSHA256",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "6206CF899C7E40D9ADEC452C77212CE2E14ED8874823656EBBC1136137D7E69F"
+          }
+,         {
+              "id"           : "cert",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIEBDCCAuygAwIBAgIUJolb0Kh6hoimvo4BQlj7wr2foO0wDQYJKoZIhvcNAQELBQAwgZ4xCzAJBgNVBAYTAklSMQ4wDAYDVQQIDAVTbGlnbzEUMBIGA1UEBwwLUm9zc2VzUG9pbnQxGzAZBgNVBAoMEkRhbW9zUGFydG5lclBvcnRhbDEWMBQGA1UECwwNSVQgRGVwYXJ0bWVudDETMBEGA1UEAwwKZGFtb3BvcnRhbDEfMB0GCSqGSIb3DQEJARYQYWRtaW5ARGFtb1BvcnRhbDAeFw0yNDExMjcxNDU0MDFaFw0zNDExMjUxNDU0MDFaMIGeMQswCQYDVQQGEwJJUjEOMAwGA1UECAwFU2xpZ28xFDASBgNVBAcMC1Jvc3Nlc1BvaW50MRswGQYDVQQKDBJEYW1vc1BhcnRuZXJQb3J0YWwxFjAUBgNVBAsMDUlUIERlcGFydG1lbnQxEzARBgNVBAMMCmRhbW9wb3J0YWwxHzAdBgkqhkiG9w0BCQEWEGFkbWluQERhbW9Qb3J0YWwwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDXN0In+LgrghOFXhYhm6qlpNiyYgJ0E2MHLvQWu91kKZCehnsiFvThqbrV9g44L8dGVHoNIE+VrLWjbGDNNafdzNWd8V21J89y0ZSDXB44XTDo55sqprsu86syr50tP++s/D35Yj9w2/4LVTvdvkDqVBciut42fZ33KzP0zDTif4090bzX6wnartKTdIWoRNrQgSBLPoz67T3nzUL6lEiPkcRLzN/jLcqQ/jK2Gc0H5GCAvLBWbyznAEr96FNz4ZIk98Laq9VSl2wjlKkQOgEi5BiTB6JHPBhsqKt3mzFAsBIX5e8ZnHdQvKZQ6jChOFWdCdiiHi+uTaI1qa1D4QMJAgMBAAGjODA2MBUGA1UdEQQOMAyCCmRhbW9wb3J0YWwwHQYDVR0OBBYEFN5VvTXLLU1uSjZvpXD6rFK0KLvnMA0GCSqGSIb3DQEBCwUAA4IBAQAK5nchS2gh8I+ferytelImNDTGKLVbqogLFs4OhHAeb4JwgryD2ngVKmRYoC9sBOPNv3w7nZsciTtMfhGP6TZxTvIaJxu1xMAn2g9pjRDkZXXkPMeX+76INRKc6KmtYKlsWvE0jqX6A1oVZGLa1dql7St2FP0eEtxm6q44Af66EOoTsQ38HaxpBn8Sa1rwEk57YsH9+23y7r6ifRnnQEz0xpbfaiePAzGIIe98Wg8DM7pr3crkMDux6+48C9mQgqq+VpuXlFwHTbHtWaOKrI3TCf7by/nNiEOEyZDVh15RjhLnkgE7eGphqaSexWy19vKv3l0stz0Da0xixf6WDfC3\n-----END CERTIFICATE-----"
+          }
+,         {
+              "id"           : "cert_commonName",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "OK",
+              "finding"      : "damoportal"
+          }
+,         {
+              "id"           : "cert_commonName_wo_SNI",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "damoportal"
+          }
+,         {
+              "id"           : "cert_subjectAltName",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "damoportal"
+          }
+,         {
+              "id"           : "cert_trust",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "HIGH",
+              "finding"      : "certificate does not match supplied URI (same w/o SNI)"
+          }
+,         {
+              "id"           : "cert_chain_of_trust",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "CRITICAL",
+              "finding"      : "failed (self signed)."
+          }
+,         {
+              "id"           : "cert_certificatePolicies_EV",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "no"
+          }
+,         {
+              "id"           : "cert_expirationStatus",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "OK",
+              "finding"      : "3637 >= 60 days"
+          }
+,         {
+              "id"           : "cert_notBefore",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "2024-11-27 14:54"
+          }
+,         {
+              "id"           : "cert_notAfter",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "OK",
+              "finding"      : "2034-11-25 14:54"
+          }
+,         {
+              "id"           : "cert_extlifeSpan",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "HIGH",
+              "finding"      : "3650 days"
+          }
+,         {
+              "id"           : "cert_eTLS",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "not present"
+          }
+,         {
+              "id"           : "cert_crlDistributionPoints",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "--"
+          }
+,         {
+              "id"           : "cert_ocspURL",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "--"
+          }
+,         {
+              "id"           : "cert_revocation",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "HIGH",
+              "finding"      : "Neither CRL nor OCSP URI provided"
+          }
+,         {
+              "id"           : "OCSP_stapling",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "cert_mustStapleExtension",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "--"
+          }
+,         {
+              "id"           : "DNS_CAArecord",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "LOW",
+              "finding"      : "--"
+          }
+,         {
+              "id"           : "certificate_transparency",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "--"
+          }
+,         {
+              "id"           : "certs_countServer",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "1"
+          }
+,         {
+              "id"           : "certs_list_ordering_problem",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "no"
+          }
+,         {
+              "id"           : "cert_caIssuers",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "damoportal (DamosPartnerPortal from IR)"
+          }
+,         {
+              "id"           : "intermediate_cert_badOCSP",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "OK",
+              "finding"      : "intermediate certificate(s) is/are ok"
+          }
+,         {
+              "id"           : "HTTP_status_code",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "302 Found ('/')"
+          }
+,         {
+              "id"           : "HTTP_clock_skew",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "Got no HTTP time, maybe try different URL?"
+          }
+,         {
+              "id"           : "HSTS",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "LOW",
+              "finding"      : "not offered"
+          }
+,         {
+              "id"           : "HPKP",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "No support for HTTP Public Key Pinning"
+          }
+,         {
+              "id"           : "banner_server",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "No Server banner line in header, interesting!"
+          }
+,         {
+              "id"           : "banner_application",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "No application banner found"
+          }
+,         {
+              "id"           : "cookie_count",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "0 at '/' (30x detected, better try target URL of 30x)"
+          }
+,         {
+              "id"           : "security_headers",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "MEDIUM",
+              "finding"      : "--"
+          }
+,         {
+              "id"           : "banner_reverseproxy",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "cwe"          : "CWE-200",
+              "finding"      : "--"
+          }
+,         {
+              "id"           : "heartbleed",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "OK",
+              "cve"          : "CVE-2014-0160",
+              "cwe"          : "CWE-119",
+              "finding"      : "not vulnerable, no heartbeat extension"
+          }
+,         {
+              "id"           : "CCS",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "OK",
+              "cve"          : "CVE-2014-0224",
+              "cwe"          : "CWE-310",
+              "finding"      : "not vulnerable"
+          }
+,         {
+              "id"           : "ticketbleed",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "OK",
+              "cve"          : "CVE-2016-9244",
+              "cwe"          : "CWE-200",
+              "finding"      : "not vulnerable"
+          }
+,         {
+              "id"           : "ROBOT",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "OK",
+              "cve"          : "CVE-2017-17382 CVE-2017-17427 CVE-2017-17428 CVE-2017-13098 CVE-2017-1000385 CVE-2017-13099 CVE-2016-6883 CVE-2012-5081 CVE-2017-6168",
+              "cwe"          : "CWE-203",
+              "finding"      : "not vulnerable"
+          }
+,         {
+              "id"           : "secure_renego",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "OK",
+              "cwe"          : "CWE-310",
+              "finding"      : "supported"
+          }
+,         {
+              "id"           : "secure_client_renego",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "HIGH",
+              "cve"          : "CVE-2011-1473",
+              "cwe"          : "CWE-310",
+              "finding"      : "VULNERABLE, DoS threat"
+          }
+,         {
+              "id"           : "CRIME_TLS",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "OK",
+              "cve"          : "CVE-2012-4929",
+              "cwe"          : "CWE-310",
+              "finding"      : "not vulnerable"
+          }
+,         {
+              "id"           : "BREACH",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "OK",
+              "cve"          : "CVE-2013-3587",
+              "cwe"          : "CWE-310",
+              "finding"      : "not vulnerable, no gzip/deflate/compress/br HTTP compression  - only supplied '/' tested"
+          }
+,         {
+              "id"           : "POODLE_SSL",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "OK",
+              "cve"          : "CVE-2014-3566",
+              "cwe"          : "CWE-310",
+              "finding"      : "not vulnerable, no SSLv3"
+          }
+,         {
+              "id"           : "fallback_SCSV",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "OK",
+              "finding"      : "no protocol below TLS 1.2 offered"
+          }
+,         {
+              "id"           : "SWEET32",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "OK",
+              "cve"          : "CVE-2016-2183 CVE-2016-6329",
+              "cwe"          : "CWE-327",
+              "finding"      : "not vulnerable"
+          }
+,         {
+              "id"           : "FREAK",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "OK",
+              "cve"          : "CVE-2015-0204",
+              "cwe"          : "CWE-310",
+              "finding"      : "not vulnerable"
+          }
+,         {
+              "id"           : "DROWN",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "OK",
+              "cve"          : "CVE-2016-0800 CVE-2016-0703",
+              "cwe"          : "CWE-310",
+              "finding"      : "not vulnerable on this host and port"
+          }
+,         {
+              "id"           : "DROWN_hint",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "cve"          : "CVE-2016-0800 CVE-2016-0703",
+              "cwe"          : "CWE-310",
+              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=6206CF899C7E40D9ADEC452C77212CE2E14ED8874823656EBBC1136137D7E69F"
+          }
+,         {
+              "id"           : "LOGJAM",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "OK",
+              "cve"          : "CVE-2015-4000",
+              "cwe"          : "CWE-310",
+              "finding"      : "not vulnerable, no DH EXPORT ciphers,"
+          }
+,         {
+              "id"           : "LOGJAM-common_primes",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "OK",
+              "cve"          : "CVE-2015-4000",
+              "cwe"          : "CWE-310",
+              "finding"      : "no DH key with <= TLS 1.2"
+          }
+,         {
+              "id"           : "BEAST",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "OK",
+              "cve"          : "CVE-2011-3389",
+              "cwe"          : "CWE-20",
+              "finding"      : "not vulnerable, no SSL3 or TLS1"
+          }
+,         {
+              "id"           : "LUCKY13",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "LOW",
+              "cve"          : "CVE-2013-0169",
+              "cwe"          : "CWE-310",
+              "finding"      : "potentially vulnerable, uses TLS CBC ciphers"
+          }
+,         {
+              "id"           : "winshock",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "OK",
+              "cve"          : "CVE-2014-6321",
+              "cwe"          : "CWE-94",
+              "finding"      : "not vulnerable"
+          }
+,         {
+              "id"           : "RC4",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "OK",
+              "cve"          : "CVE-2013-2566 CVE-2015-2808",
+              "cwe"          : "CWE-310",
+              "finding"      : "not vulnerable"
+          }
+,         {
+              "id"           : "clientsimulation-android_60",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-android_70",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-android_81",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-android_90",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.3 TLS_AES_128_GCM_SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-android_X",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.3 TLS_AES_128_GCM_SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-android_11",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.3 TLS_AES_128_GCM_SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-android_12",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.3 TLS_AES_128_GCM_SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-chrome_79_win10",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.3 TLS_AES_128_GCM_SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-chrome_101_win10",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.3 TLS_AES_128_GCM_SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-firefox_66_win81",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.3 TLS_AES_128_GCM_SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-firefox_100_win10",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.3 TLS_AES_128_GCM_SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-ie_6_xp",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "No connection"
+          }
+,         {
+              "id"           : "clientsimulation-ie_8_win7",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "No connection"
+          }
+,         {
+              "id"           : "clientsimulation-ie_8_xp",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "No connection"
+          }
+,         {
+              "id"           : "clientsimulation-ie_11_win7",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-SHA"
+          }
+,         {
+              "id"           : "clientsimulation-ie_11_win81",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-SHA"
+          }
+,         {
+              "id"           : "clientsimulation-ie_11_winphone81",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-SHA"
+          }
+,         {
+              "id"           : "clientsimulation-ie_11_win10",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-edge_15_win10",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-edge_101_win10_21h2",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.3 TLS_AES_128_GCM_SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-safari_121_ios_122",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.3 TLS_AES_128_GCM_SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-safari_130_osx_10146",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.3 TLS_AES_128_GCM_SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-safari_154_osx_1231",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.3 TLS_AES_128_GCM_SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-java_7u25",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "No connection"
+          }
+,         {
+              "id"           : "clientsimulation-java_8u161",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-java1102",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.3 TLS_AES_128_GCM_SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-java1703",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.3 TLS_AES_128_GCM_SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-go_1178",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.3 TLS_AES_128_GCM_SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-libressl_283",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-openssl_102e",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-openssl_110l",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-openssl_111d",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.3 TLS_AES_128_GCM_SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-openssl_303",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.3 TLS_AES_128_GCM_SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-apple_mail_16_0",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
+              "id"           : "clientsimulation-thunderbird_91_9",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "TLSv1.3 TLS_AES_128_GCM_SHA256"
+          }
+,         {
+              "id"           : "rating_spec",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "SSL Labs's 'SSL Server Rating Guide' (version 2009q from 2020-01-30)"
+          }
+,         {
+              "id"           : "rating_doc",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "https://github.com/ssllabs/research/wiki/SSL-Server-Rating-Guide"
+          }
+,         {
+              "id"           : "protocol_support_score",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "0"
+          }
+,         {
+              "id"           : "protocol_support_score_weighted",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "0"
+          }
+,         {
+              "id"           : "key_exchange_score",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "0"
+          }
+,         {
+              "id"           : "key_exchange_score_weighted",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "0"
+          }
+,         {
+              "id"           : "cipher_strength_score",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "0"
+          }
+,         {
+              "id"           : "cipher_strength_score_weighted",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "0"
+          }
+,         {
+              "id"           : "final_score",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "0"
+          }
+,         {
+              "id"           : "overall_grade",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "CRITICAL",
+              "finding"      : "T"
+          }
+,         {
+              "id"           : "grade_cap_reason_1",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "Grade capped to T. Issues with the chain of trust (self signed)"
+          }
+,         {
+              "id"           : "grade_cap_reason_2",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "Grade capped to M. Domain name mismatch"
+          }
+,         {
+              "id"           : "grade_cap_reason_3",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "Grade capped to A. HSTS is not offered"
+          }
+,         {
+              "id"           : "scanTime",
+              "ip"           : "gateway-api/172.18.0.3",
+              "port"         : "8091",
+              "severity"     : "INFO",
+              "finding"      : "88"
+          }
+]

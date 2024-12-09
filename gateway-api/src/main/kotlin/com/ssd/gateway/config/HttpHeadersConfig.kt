@@ -1,5 +1,6 @@
 package com.ssd.gateway.config
 
+import com.ssd.gateway.REPORT_PATH
 import org.springframework.cloud.gateway.filter.GlobalFilter
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
@@ -30,7 +31,7 @@ class HttpHeadersConfig {
             add("X-Permitted-Cross-Domain-Policies", "none")
 
             cspHeaders.forEach {
-                add(it, "default-src 'self'; img-src 'self' https://upload.wikimedia.org; report-uri /csp-report")
+                add(it, "default-src 'self'; img-src 'self' https://upload.wikimedia.org; report-uri $REPORT_PATH")
             }
         }
         chain.filter(exchange)

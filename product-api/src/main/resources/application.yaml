@@ -1,3 +1,4 @@
+# in reality, this key would be stored securely.
 security-properties:
   encryptionSecretKey: 1234567890123456
 
