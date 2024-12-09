@@ -7,7 +7,7 @@ env:
     - https://gateway-api:8091/
   parameters:
     failOnError: true
-    progressToStdout: false
+    progressToStdout: true
 jobs:
 - parameters:
     enableTags: false

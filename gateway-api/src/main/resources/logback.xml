@@ -6,15 +6,6 @@
         </encoder>
     </appender>
 
-    <logger name="org.testcontainers" level="INFO"/>
-    <logger name="org.springframework.cloud.gateway" level="INFO"/>
-    <logger name="org.springframework.data.redis" level="INFO"/>
-    <logger name="org.springframework.cloud.gateway.filter.ratelimit" level="INFO"/>
-
-    <logger name="org.springframework.boot.context.properties" level="DEBUG"/>
-
-
-
     <root level="INFO">
         <appender-ref ref="CONSOLE"/>
     </root>

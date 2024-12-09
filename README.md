@@ -10,7 +10,7 @@
 
 ## 1.2 System
 
-1. create `damo_network` - to allow the containers communicate on the same network
+ 1. create `damo_network` - to allow the containers communicate on the same network
 
 ```bash
 if ! docker network inspect damo_network > /dev/null 2>&1; then
@@ -31,6 +31,7 @@ sudo bash -c 'echo "127.0.0.1 damoportal" >> /etc/hosts'
 3. Clear host cache
    Via *chrome://net-internals/#dns*, or just restart browser.
 
+
 ## 2. Build
 
 ## 2.1 product-api
@@ -43,3 +44,18 @@ sudo bash -c 'echo "127.0.0.1 damoportal" >> /etc/hosts'
 ```html
 https://damoportal:6867/portal/products
 ```
+
+## 3. Testing
+The following Testing will run as part of the build:
+* Unit Testing
+* Integration Testing
+* Static Application Security Testing (SAST)
+
+Dynamic Application Security Testing (DAST) is long-running, and is run separate.
+
+```bash
+cd gateway-api/zap
+docker-compose down --volumes
+docker-compose up -d
+```
+

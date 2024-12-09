@@ -66,4 +66,10 @@ jib {
 		jvmFlags = listOf("-Xmx2048M")
 		ports = listOf("8080", "8081")
 	}
+	/**
+	 * Work around, as README bash could not find docker
+	 */
+	dockerClient {
+		executable = "/usr/local/bin/docker"
+	}
 }

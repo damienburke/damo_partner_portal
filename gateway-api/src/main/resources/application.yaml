@@ -12,6 +12,14 @@ spring:
   cloud:
     gateway:
       routes:
+
+        - id: redirect_root_to_portal_products
+          uri: http://product-api:8080
+          predicates:
+            - Path=/
+          filters:
+            - RedirectTo=302, /portal/products
+
         - id: portal_route
           uri: http://product-api:8080
           predicates:
@@ -24,11 +32,6 @@ spring:
                 redis-rate-limiter.burstCapacity: 10
                 redis-rate-limiter.requestedTokens: 1 # num tokens required per request
                 key-resolver: "#{@productKeyResolver}"
-            - name: CircuitBreaker
-              args:
-                name: myCircuitBreaker
-                fallbackUri: forward:/customer-fallback
-            - AddResponseHeader=foo, bar
         - id: bin
           uri: http://httpbin.org:80
           predicates:

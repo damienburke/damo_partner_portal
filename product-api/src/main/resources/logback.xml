@@ -6,8 +6,6 @@
         </encoder>
     </appender>
 
-    <logger name="org.testcontainers" level="INFO"/>
-
     <root level="INFO">
         <appender-ref ref="CONSOLE"/>
     </root>

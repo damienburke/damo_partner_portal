@@ -58,5 +58,5 @@ management:
 
 logging:
   level:
-    org.springframework.jdbc.datasource: DEBUG
-    org.springframework.boot.jdbc.DataSourceInitialization: DEBUG
+    org.springframework.jdbc.datasource: INFO
+    org.springframework.boot.jdbc.DataSourceInitialization: INFO

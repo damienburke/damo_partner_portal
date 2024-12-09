@@ -11,6 +11,7 @@ import jakarta.persistence.Id
 import jakarta.persistence.Table
 import jakarta.validation.constraints.Min
 import jakarta.validation.constraints.NotBlank
+import jakarta.validation.constraints.NotEmpty
 import jakarta.validation.constraints.NotNull
 import jakarta.validation.constraints.Positive
 import jakarta.validation.constraints.Size
@@ -24,19 +25,19 @@ data class ProductEntity(
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Int = 0,
 
-    @get:Size(max = 50, message = "Artist must be between 5 and 50 characters")
-    @NotBlank
+    @get:Size(max = 50, message = "Artist must be less than 50 characters")
+    @field:NotEmpty
     val artist: String = "",
 
-    @get:Size(max = 100, message = "Album title must be between 5 and 100 characters")
-    @NotBlank
+    @get:Size(max = 100, message = "Album title must less than 100 characters")
+    @field:NotEmpty
     val albumTitle: String = "",
 
-    @Min(1900)
-    @Positive
+    @field:Min(1900)
+    @field:Positive
     val releaseYear: Int = 0,
 
-    @Positive
+    @field:Positive
     val price: BigDecimal = BigDecimal.ZERO,
 
     @ColumnTransformer(

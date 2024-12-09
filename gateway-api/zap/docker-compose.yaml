@@ -1,13 +1,12 @@
-
-
 services:
 
   owasp:
     container_name: zaproxy
     image: ghcr.io/zaproxy/zaproxy:stable
+    # can do zap-baseline.py or zap-full-scan.py
     entrypoint: >
-      zap-baseline.py -t https://gateway-api:8091/portal/products
-      -r testreport.html
+      zap-full-scan.py -t https://gateway-api:8091/portal/products
+      -r testreport.html -a -d
     command: >
       /bin/bash -c "zap.sh -certload /zap/damoportal.crt &&
       sleep 10"
@@ -16,7 +15,7 @@ services:
       - ./results:/zap/wrk
     networks:
       - damo_network
-    restart: always
+    restart: no
 
 networks:
   damo_network:
