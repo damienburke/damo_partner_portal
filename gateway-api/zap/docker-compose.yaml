@@ -11,6 +11,7 @@ services:
       /bin/bash -c "zap.sh -certload /zap/damoportal.crt &&
       sleep 10"
     volumes:
+      # ensure https works from zap to the portal
       - ./../local/CA/out/damoportal.crt:/zap/damoportal.crt
       - ./results:/zap/wrk
     networks:

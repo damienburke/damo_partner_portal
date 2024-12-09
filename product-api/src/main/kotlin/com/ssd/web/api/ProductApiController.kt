@@ -7,6 +7,9 @@ import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
 
+/**
+ * Nothing calling this
+ */
 @RestController
 @RequestMapping("/api")
 class ProductApiController(val productService: ProductService) {

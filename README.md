@@ -49,7 +49,8 @@ https://damoportal:6867/portal/products
 The following Testing will run as part of the build:
 * Unit Testing
 * Integration Testing
-* Static Application Security Testing (SAST)
+* Static Application Security Testing (SAST) - snyk
+* Software Composition Analysis (SCA) - snyk
 
 Dynamic Application Security Testing (DAST) is long-running, and is run separate.
 

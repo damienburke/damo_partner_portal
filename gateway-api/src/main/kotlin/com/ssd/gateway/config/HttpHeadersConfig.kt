@@ -5,15 +5,17 @@ import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 
 @Configuration
-class GatewayConfig {
+class HttpHeadersConfig {
 
-    /** List CSP HTTP Headers */
-    val cspHeaders = ArrayList<String>()
+    private val cspHeaders = ArrayList<String>()
 
     init {
+        /**
+         * DO NOT use X-Content-Security-Policy or X-WebKit-CSP. Their implementations are obsolete (since Firefox 23,
+         * Chrome 25), limited, inconsistent, and incredibly buggy.
+         * https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html#warning
+         */
         cspHeaders.add("Content-Security-Policy") // Defined by W3C Specs as standard header,
-        cspHeaders.add("X-Content-Security-Policy") // Used by Firefox until version 23, and Internet Explorer version 10
-        cspHeaders.add("X-WebKit-CSP") // Used by Chrome until version 25
     }
 
     @Bean
@@ -28,7 +30,7 @@ class GatewayConfig {
             add("X-Permitted-Cross-Domain-Policies", "none")
 
             cspHeaders.forEach {
-                add(it, "script-src 'self'")
+                add(it, "default-src 'self'; img-src 'self' https://upload.wikimedia.org; report-uri /csp-report")
             }
         }
         chain.filter(exchange)
